@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 18" fill="#00C6E1" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#mask0_1395_9068_00000169517268804025304340000008418671293945143476_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.7" y="0.7" width="16.7" height="16.7">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0.7" y="0.7" width="16.7" height="16.7" id="mask0_1395_9068_00000169517268804025304340000008418671293945143476_">
+	<path class="st0" d="M0.7,0.7h16.7v16.7H0.7V0.7z"/>
+</mask>
+<g class="st1">
+	<path class="st2" d="M5.4,1.9c-2.1,0-3.5,1.4-3.5,3.7v6.8c0,2.2,1.4,3.7,3.5,3.7h7.2c2.1,0,3.5-1.4,3.5-3.7V5.6
+		c0-2.2-1.4-3.7-3.5-3.7H5.4z M12.6,17.3H5.4c-2.8,0-4.7-2-4.7-4.9V5.6c0-2.9,1.9-4.9,4.7-4.9h7.2c2.8,0,4.7,2,4.7,4.9v6.8
+		C17.3,15.4,15.4,17.3,12.6,17.3z"/>
+</g>
+<path class="st2" d="M9,13c-0.3,0-0.6-0.3-0.6-0.6V9c0-0.3,0.3-0.6,0.6-0.6c0.3,0,0.6,0.3,0.6,0.6v3.3C9.6,12.7,9.3,13,9,13z"/>
+<path class="st2" d="M9,6.7c-0.5,0-0.8-0.4-0.8-0.8C8.2,5.4,8.5,5,9,5h0c0.5,0,0.8,0.4,0.8,0.8C9.8,6.3,9.5,6.7,9,6.7z"/>
+</svg>

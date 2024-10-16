@@ -1,0 +1,9 @@
+vendor/
+.vscode/
+
+cgi-bin/
+node_modules/
+upload/ 
+.history/
+_git.txt
+*.zip

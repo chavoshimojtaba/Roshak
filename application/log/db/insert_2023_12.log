@@ -1,0 +1,326 @@
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_ref' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/list?page=1&limit=5&total=0&sort=0&sort_type=DESC&q=&q_type=&resulation=1024*120&layer=1&format=psd+%7C+%D9%81%D8%A7%DB%8C%D9%84+%D9%84%D8%A7%DB%8C%D9%87+%D8%A8%D8%A7%D8%B2+%D9%81%D8%AA%D9%88%D8%B4%D8%A7%D9%BE;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-12-04 15:25:30;
+#[data]:          
+api/cv1/product/list=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '0'
+            , `tp_file`  = 'application/control/api.php'
+            , `tp_req`   = '/tarhpich/api/cv1/product/list_qupage_isq1_andlimit_isq5_andtotal_isq0_andsort_isq0_andsort_type_isqDESC_andq_isq_andq_type_isq_andresulation_isq1024_star120_andlayer_isq1_andat_isqpsd _or فایل لایه باز فتوشاپ'
+            , `tp_class` = 'api'
+            , `tp_method`= 'cv1'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/designers/mani_haghighi_quresulation_isq1024_star120_andlayer_isq1_andat_isqpsd_sum_per7C_sum_perD9_per81_perD8_perA7_perDB_per8C_perD9_per84_sum_perD9_per84_perD8_perA7_perDB_per8C_perD9_per87_sum_perD8_perA8_perD8_perA7_perD8_perB2_sum_perD9_per81_perD8_perAA_perD9_per88_perD8_perB4_perD8_perA7_perD9_perBE'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_ref' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/[HOST][avatar];
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-12-04 15:25:34;
+#[data]:          ,,
+designers/|HOST|avatar=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '0'
+            , `tp_file`  = 'application/control/designers.php'
+            , `tp_req`   = '/tarhpich/designers/_brrHOST_brl_brravatar_brl'
+            , `tp_class` = 'designers'
+            , `tp_method`= 'HOSTavatar'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/designers/mani_haghighi_quresulation_isq1024_star120_andlayer_isq1_andat_isqpsd_sum_per7C_sum_perD9_per81_perD8_perA7_perDB_per8C_perD9_per84_sum_perD9_per84_perD8_perA7_perDB_per8C_perD9_per87_sum_perD8_perA8_perD8_perA7_perD8_perB2_sum_perD9_per81_perD8_perAA_perD9_per88_perD8_perB4_perD8_perA7_perD9_perBE'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_ref' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/list?page=1&limit=5&total=0&sort=0&sort_type=DESC&q=&q_type=&resulation=1024*120&layer=1&format=psd+%7C+%D9%81%D8%A7%DB%8C%D9%84+%D9%84%D8%A7%DB%8C%D9%87+%D8%A8%D8%A7%D8%B2+%D9%81%D8%AA%D9%88%D8%B4%D8%A7%D9%BE;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-12-04 15:25:42;
+#[data]:          
+api/cv1/product/list=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '0'
+            , `tp_file`  = 'application/control/api.php'
+            , `tp_req`   = '/tarhpich/api/cv1/product/list_qupage_isq1_andlimit_isq5_andtotal_isq0_andsort_isq0_andsort_type_isqDESC_andq_isq_andq_type_isq_andresulation_isq1024_star120_andlayer_isq1_andat_isqpsd _or فایل لایه باز فتوشاپ'
+            , `tp_class` = 'api'
+            , `tp_method`= 'cv1'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/designers/mani_haghighi_quresulation_isq1024_star120_andlayer_isq1_andat_isqpsd_sum_per7C_sum_perD9_per81_perD8_perA7_perDB_per8C_perD9_per84_sum_perD9_per84_perD8_perA7_perDB_per8C_perD9_per87_sum_perD8_perA8_perD8_perA7_perD8_perB2_sum_perD9_per81_perD8_perAA_perD9_per88_perD8_perB4_perD8_perA7_perD9_perBE'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_ref' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/[HOST][avatar];
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-12-04 15:29:06;
+#[data]:          ,,
+designers/|HOST|avatar=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '0'
+            , `tp_file`  = 'application/control/designers.php'
+            , `tp_req`   = '/tarhpich/designers/_brrHOST_brl_brravatar_brl'
+            , `tp_class` = 'designers'
+            , `tp_method`= 'HOSTavatar'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/designers/mani_haghighi_quresulation_isq1024_star120_andlayer_isq1_andat_isqpsd_sum_per7C_sum_perD9_per81_perD8_perA7_perDB_per8C_perD9_per84_sum_perD9_per84_perD8_perA7_perDB_per8C_perD9_per87_sum_perD8_perA8_perD8_perA7_perD8_perB2_sum_perD9_per81_perD8_perAA_perD9_per88_perD8_perB4_perD8_perA7_perD9_perBE'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                tp_cat_path   = '',
+                `tp_color_mode`    = '...' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/add;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 15:23:56;
+#[data]:          
+api/cv1/product/add=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_cat_path   = '',
+                `tp_color_mode`    = '33',`tp_format`    = '_Forms2_-_Forms4_',`tp_dimensions`    = '39',`tp_resulation`    = '27',`tp_layer`    = '46',
+                tp_seo_title  = '11',
+                tp_file       = '',
+                tp_pic        = '',
+                tp_slug       = 'slug',
+                tp_desc       = '',
+                tp_price      = '5000',
+                tp_price_temp  = '5000',
+                tp_serial     = 100004,
+                tp_meta       = 'طرح خام کارت ویزیت شهربازی',
+                tp_title      = 'طرح خام کارت ویزیت شهربازی',
+                tp_follow     = 'follow',
+                tp_index      = 'index',
+                tp_mid        = 9,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                tp_cat_path   = '',
+                `tp_color_mode`    = '...' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/add;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 15:29:48;
+#[data]:          
+api/cv1/product/add=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_cat_path   = '',
+                `tp_color_mode`    = '33',`tp_format`    = '_Forms2_-_Forms4_',`tp_dimensions`    = '39',`tp_resulation`    = '27',`tp_layer`    = '46',
+                tp_seo_title  = '11',
+                tp_file       = '',
+                tp_pic        = '',
+                tp_slug       = 'slug',
+                tp_desc       = '',
+                tp_price      = '5000',
+                tp_price_temp  = '5000',
+                tp_serial     = 100004,
+                tp_meta       = 'طرح خام کارت ویزیت شهربازی',
+                tp_title      = 'طرح خام کارت ویزیت شهربازی',
+                tp_follow     = 'follow',
+                tp_index      = 'index',
+                tp_mid        = 9,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                tp_cat_path   = '',
+                `tp_color_mode`    = '...' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/add;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 15:31:41;
+#[data]:          
+api/cv1/product/add=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_cat_path   = '',
+                `tp_color_mode`    = '33',`tp_format`    = '_Forms2_-_Forms4_',`tp_dimensions`    = '39',`tp_resulation`    = '27',`tp_layer`    = '46',
+                tp_seo_title  = '11',
+                tp_file       = '',
+                tp_pic        = '',
+                tp_slug       = 'slug',
+                tp_desc       = '',
+                tp_price      = '5000',
+                tp_price_temp  = '5000',
+                tp_serial     = 100004,
+                tp_meta       = 'طرح خام کارت ویزیت شهربازی',
+                tp_title      = 'طرح خام کارت ویزیت شهربازی',
+                tp_follow     = 'follow',
+                tp_index      = 'index',
+                tp_mid        = 9,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                tp_cat_path   = '',
+                `tp_color_mode`    = '...' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/add;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 15:32:07;
+#[data]:          
+api/cv1/product/add=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_cat_path   = '',
+                `tp_color_mode`    = '33',`tp_format`    = '_Forms2_-_Forms4_',`tp_dimensions`    = '39',`tp_resulation`    = '27',`tp_layer`    = '46',
+                tp_seo_title  = '11',
+                tp_file       = '',
+                tp_pic        = '',
+                tp_slug       = 'slug',
+                tp_desc       = '',
+                tp_price      = '5000',
+                tp_price_temp  = '5000',
+                tp_serial     = 100004,
+                tp_meta       = 'طرح خام کارت ویزیت شهربازی',
+                tp_title      = 'طرح خام کارت ویزیت شهربازی',
+                tp_follow     = 'follow',
+                tp_index      = 'index',
+                tp_mid        = 9,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''1','',now(),'member','yes' )' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/ticket/reply;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-16 14:39:59;
+#[data]:          
+api/cv1/ticket/reply=;
+#[sql]:
+ INSERT INTO
+            `tp_ticket_comments`
+            (`tp_tid`,tp_umid ,`tp_text`,tp_date, tp_user_type, tp_read)
+            VALUES( ,'1','',now(),'member','yes' )
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''1','qwddd',now(),'member','yes' )' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/ticket/reply;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-16 14:40:17;
+#[data]:          
+api/cv1/ticket/reply=;
+#[sql]:
+ INSERT INTO
+            `tp_ticket_comments`
+            (`tp_tid`,tp_umid ,`tp_text`,tp_date, tp_user_type, tp_read)
+            VALUES( ,'1','qwddd',now(),'member','yes' )
+        ;
+#______________________________________________________________________
+ 
+ 

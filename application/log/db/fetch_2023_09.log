@@ -1,0 +1,448 @@
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'file.sp_alias' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/file/list?page=1&limit=30&filetype=0&is_editor=0&cat=0&q=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-09-25 14:24:31;
+#[data]:          
+api/v1/file/list=;
+#[sql]:
+ SELECT
+                COALESCE(`file`.sp_alias, '_')  AS `alias`,
+                `file`.sp_id                    AS `id`,
+                `file`.sp_name                  AS `name`,
+                `file`.sp_cid                   AS `cid`,
+                `file`.sp_title                 AS `title`,
+                `file`.sp_alt                   AS `alt`,
+                `file`.sp_dir                   AS `dir`,
+                `file`.sp_type                  AS `type`,
+                `file`.sp_ext                   AS `ext`,
+                `file`.sp_date                  AS `createAt`,
+                `file`.sp_size                  AS `size`,
+                `file`.sp_old_name              AS `old_name`,
+                `category`.sp_alias             AS `cat_alias`,
+                `category`.sp_title             AS `category_title`
+            FROM
+                `sys_file` AS `file`
+            INNER JOIN
+                `sys_file_category` AS `category`
+                    ON(
+                        category.sp_id = file.sp_cid
+                        AND category.sp_delete = '0'
+                    )
+            WHERE
+                `file`.`sp_delete`  = '0' AND `file`.`sp_is_thumbnail`  = 0 
+            ORDER BY  file.sp_id DESC
+         LIMIT 0 , 30;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_id' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/file/list?page=1&limit=30&filetype=0&is_editor=0&cat=0&q=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-09-25 14:26:13;
+#[data]:          
+api/v1/file/list=;
+#[sql]:
+ SELECT
+                    count(tp_id) cnt
+                FROM
+                    sys_file;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tags.tp_short_desc' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/tag/list?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=&type=blog;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-09-25 14:29:33;
+#[data]:          
+api/v1/tag/list=;
+#[sql]:
+ SELECT
+                tags.tp_id           AS id, 
+                tags.`tp_short_desc` AS short_desc,  
+                tags.`tp_title_1`    AS title_1,  
+                tags.`tp_title`      AS title,  
+				'محصولات'             AS `products`,
+                tags.`tp_slug`       AS `slug`,  
+                tags.`tp_desc`       AS `desc`,  
+                tags.`tp_meta`       AS meta,  
+                tags.tp_date         AS createAt 
+            FROM
+                `tp_blog_tags` AS tags 
+            WHERE
+                tags.`tp_delete` = 0   ORDER BY tags.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.sp_publish' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:11:57;
+#[data]:          ;
+#[sql]:
+ SELECT
+                category.tp_id       AS id,
+                category.tp_slug     AS `slug`,
+                category.sp_publish  AS publish,
+                category.tp_short_desc     AS `short_desc`,
+                
+                category.`sp_desc_lng_` AS `desc`,
+                category.tp_title_1     AS `seo_title`,
+                category.`sp_meta` AS seo_meta,
+            
+                category.tp_type     AS `type`,
+                category.tp_pid      AS pid,
+                category.tp_title    AS title
+			FROM
+                `tp_category`        AS category
+			WHERE
+                category.`tp_delete` = '0'  AND category.tp_type ='product'  AND category.`sp_publish` = 1 
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.sp_publish' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:12:22;
+#[data]:          ;
+#[sql]:
+ SELECT
+                category.tp_id       AS id,
+                category.tp_slug     AS `slug`,
+                category.sp_publish  AS publish,
+                category.tp_short_desc     AS `short_desc`,
+                
+                category.`sp_desc_lng_` AS `desc`,
+                category.sp_title_1     AS `seo_title`,
+                category.`sp_meta` AS seo_meta,
+            
+                category.tp_type     AS `type`,
+                category.tp_pid      AS pid,
+                category.tp_title    AS title
+			FROM
+                `tp_category`        AS category
+			WHERE
+                category.`tp_delete` = '0'  AND category.tp_type ='product'  AND category.`sp_publish` = 1 
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.tp_desc_lng_' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:12:40;
+#[data]:          ;
+#[sql]:
+ SELECT
+                category.tp_id       AS id,
+                category.tp_slug     AS `slug`,
+                category.tp_publish  AS publish,
+                category.tp_short_desc     AS `short_desc`,
+                
+                category.`tp_desc_lng_` AS `desc`,
+                category.tp_title_1     AS `seo_title`,
+                category.`tp_meta` AS seo_meta,
+            
+                category.tp_type     AS `type`,
+                category.tp_pid      AS pid,
+                category.tp_title    AS title
+			FROM
+                `tp_category`        AS category
+			WHERE
+                category.`tp_delete` = '0'  AND category.tp_type ='product'  AND category.`tp_publish` = 1 
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.sp_icon' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:17:27;
+#[data]:          ;
+#[sql]:
+ SELECT
+                category.tp_id       AS id,
+                category.tp_slug     AS `slug`,
+                category.tp_publish  AS publish,
+                category.sp_icon     AS `icon`,
+                category.tp_short_desc     AS `short_desc`,
+                
+                category.`tp_desc` AS `desc`,
+                category.tp_title_1     AS `seo_title`,
+                category.`tp_meta` AS seo_meta,
+            
+                category.tp_type     AS `type`,
+                category.tp_pid      AS pid,
+                category.tp_title    AS title
+			FROM
+                `tp_category`        AS category
+			WHERE
+                category.`tp_delete` = '0'  AND category.tp_type ='product'  AND category.`tp_publish` = 1 
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+            WHERE
+                favorite.tp_delete = 0
+            ORD...' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:57:30;
+#[data]:          ;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_name AS `product_name`,
+                product.tp_thumbnail AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_product_favorites favorite  INNER JOIN
+                tp_products product ON(product.tp_id = favorite.tp_pid)  INNER JOIN
+                tp_members member ON(member.tp_id = favorite.tp_mid AND member.tp_id=)
+            WHERE
+                favorite.tp_delete = 0
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_member_product_favorites' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:57:55;
+#[data]:          ;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_name AS `product_name`,
+                product.tp_thumbnail AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_product_favorites favorite  INNER JOIN
+                tp_products product ON(product.tp_id = favorite.tp_pid)  INNER JOIN
+                tp_members member ON(member.tp_id = favorite.tp_mid AND member.tp_id=1)
+            WHERE
+                favorite.tp_delete = 0
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_products' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:58:32;
+#[data]:          ;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_name AS `product_name`,
+                product.tp_thumbnail AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_favorites favorite  INNER JOIN
+                tp_products product ON(product.tp_id = favorite.tp_pid)  INNER JOIN
+                tp_members member ON(member.tp_id = favorite.tp_mid AND member.tp_id=1)
+            WHERE
+                favorite.tp_delete = 0
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'product.tp_name' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:58:48;
+#[data]:          ;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_name AS `product_name`,
+                product.tp_thumbnail AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_favorites favorite  INNER JOIN
+                tp_product product ON(product.tp_id = favorite.tp_pid)  INNER JOIN
+                tp_members member ON(member.tp_id = favorite.tp_mid AND member.tp_id=1)
+            WHERE
+                favorite.tp_delete = 0
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'product.tp_thumbnail' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-25 16:59:14;
+#[data]:          ;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_title AS `product_name`,
+                product.tp_thumbnail AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_favorites favorite  INNER JOIN
+                tp_product product ON(product.tp_id = favorite.tp_pid)  INNER JOIN
+                tp_members member ON(member.tp_id = favorite.tp_mid AND member.tp_id=1)
+            WHERE
+                favorite.tp_delete = 0
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_user_stories' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-30 11:51:36;
+#[data]:          ;
+#[sql]:
+ SELECT
+                user_stories.tp_id AS id,
+                user_stories.`tp_url` AS `url`,
+                user_stories.`tp_pic` AS `pic`,
+                user_stories.`tp_text` AS `text`,
+                user_stories.`tp_fullname` AS `fullname`,
+                user_stories.`tp_sub_title` AS `sub_title`
+            FROM
+                `tp_user_stories` AS  user_stories
+            WHERE
+                user_stories.`tp_delete` = 0
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_date' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-09-30 14:33:46;
+#[data]:          ;
+#[sql]:
+ SELECT
+                member.tp_id                     AS `id`,
+                designer.`tp_slug`               AS `slug`,
+                designer.`tp_expertise`          AS `expertise`,
+                designer.`tp_statistic_follower` AS `statistic_follower`,
+                designer.`tp_statistic_product`  AS `statistic_product`,
+                designer.`tp_statistic_rate`     AS `statistic_rate`,
+                DATE(designer.tp_date)             AS `createAt`,
+                CONCAT(
+                    member.tp_family,
+                    ' ',
+                    member.tp_name )             AS `full_name`,
+                member.tp_pic                    AS `pic`
+            FROM
+                `tp_members`   AS `member`       INNER JOIN
+                `tp_designers` AS `designer`
+            WHERE
+                member.tp_delete = 0
+            ORDER BY
+                 designer.`tp_statistic_rate` DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 

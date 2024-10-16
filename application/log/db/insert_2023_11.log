@@ -1,0 +1,779 @@
+#[system:error] : insert;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.sp_footer_links' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/setting/add_footer_links;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-01 12:54:35;
+#[data]:          
+api/v1/setting/add_footer_links=;
+#[sql]:
+ 
+            INSERT INTO
+                `sp_footer_links`
+            SET
+                tp_pid      = '1',
+                tp_title      = 'کارت ویزیت نمایشگاه خودرو ',
+                tp_url = 'https://tarhpich.ir/pc/business-card/exhibition-business-card/car-show-business-card/',
+                sp_date      = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'sp_date' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/setting/add_footer_links;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-01 12:55:10;
+#[data]:          
+api/v1/setting/add_footer_links=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_footer_links`
+            SET
+                tp_pid      = '1',
+                tp_title      = 'کارت ویزیت نمایشگاه خودرو ',
+                tp_url = 'https://tarhpich.ir/pc/business-card/exhibition-business-card/car-show-business-card/',
+                sp_date      = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_req' at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/list?page=1&limit=5&total=3&sort=0&sort_type=DESC&q=&q_type=&filetype=&dimensions=&color_mode=&format=&layer=&resulation=&free_items=on&free=true;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-11-01 15:28:52;
+#[data]:          
+api/cv1/product/list=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '1'
+            , `tp_file`  = 'application/control/api.php'
+            , `tp_req`   = '/tarhpich/api/cv1/product/list_qupage_isq1_andlimit_isq5_andtotal_isq3_andsort_isq0_andsort_type_isqDESC_andq_isq_andq_type_isq_and_type_isq_anddimensions_isq_andcolor_mode_isq_andat_isq_andlayer_isq_andresulation_isq_andfree_items_isqon_andfree_isqtrue'
+            , `tp_class` = 'api'
+            , `tp_method`= 'cv1'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/search_qufree_items_isqon_andfree_isqtrue'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_req' at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/list?page=1&limit=5&total=3&sort=0&sort_type=DESC&q=&q_type=&filetype=&dimensions=&color_mode=&format=&layer=&resulation=&free_items=on&free=true;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-11-01 15:28:52;
+#[data]:          
+api/cv1/product/list=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '1'
+            , `tp_file`  = 'application/control/api.php'
+            , `tp_req`   = '/tarhpich/api/cv1/product/list_qupage_isq1_andlimit_isq5_andtotal_isq3_andsort_isq0_andsort_type_isqDESC_andq_isq_andq_type_isq_and_type_isq_anddimensions_isq_andcolor_mode_isq_andat_isq_andlayer_isq_andresulation_isq_andfree_items_isqon_andfree_isqtrue'
+            , `tp_class` = 'api'
+            , `tp_method`= 'cv1'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/search_qufree_items_isqon_andfree_isqtrue'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_req' at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/list?page=1&limit=5&total=3&sort=0&sort_type=DESC&q=&q_type=&filetype=&dimensions=&color_mode=&format=&layer=&resulation=&free_items=on&free=on;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-11-01 15:30:48;
+#[data]:          
+api/cv1/product/list=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '1'
+            , `tp_file`  = 'application/control/api.php'
+            , `tp_req`   = '/tarhpich/api/cv1/product/list_qupage_isq1_andlimit_isq5_andtotal_isq3_andsort_isq0_andsort_type_isqDESC_andq_isq_andq_type_isq_and_type_isq_anddimensions_isq_andcolor_mode_isq_andat_isq_andlayer_isq_andresulation_isq_andfree_items_isqon_andfree_isqon'
+            , `tp_class` = 'api'
+            , `tp_method`= 'cv1'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/search_qufree_items_isqon_andfree_isqon'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+				tp_publish		= 'pend',
+				tp_text			= 'qwdqwd',
+                tp_da...' at line 8;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/comment;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-06 13:19:44;
+#[data]:          
+api/cv1/comment=;
+#[sql]:
+ INSERT INTO
+                tp_product_comments
+            SET
+				tp_mid			= 1,
+				tp_pid			= 0,
+				tp_uid			= 0,
+				tp_pbid			= 4,
+				tp_parent_mid   = ,
+				tp_publish		= 'pend',
+				tp_text			= 'qwdqwd',
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1265;
+#[error]:         <font color="#FF0000">Data truncated for column 'tp_type' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-11 13:58:30;
+#[data]:          
+checkout=;
+#[sql]:
+  INSERT INTO
+                `tp_order`
+            SET
+                tp_type           = 'product',
+                tp_transaction_id = '1',
+                tp_total_price    = '0',
+                tp_desc           = 'خرید با اشتراک',
+                tp_serial         = '20231111015829',
+                tp_discount       = '0',
+                tp_discount_code  = '',
+                tp_status         = 'done',
+                tp_mid            = '1',
+                tp_date           = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_transaction`.`tp_amount` at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-11 15:19:15;
+#[data]:          
+checkout=;
+#[sql]:
+  INSERT INTO
+                `tp_transaction`
+            SET
+                tp_type     = 'product',
+                tp_amount   = '',
+                tp_token    = '',
+                tp_mid      = '1',
+                tp_status   = 'pend',
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'no' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/category/add;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-12 15:31:18;
+#[data]:          
+api/v1/category/add=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_category`
+            SET
+                tp_pid   = '0',
+                tp_icon   = '{"212":{"file":"upload/image/product/product_159c1ffe16997904645173152454434.png","id":"212"}}',
+                tp_filetype   = 'vector',
+                tp_slug      = 'vector-tazeni',
+                tp_meta      = 'وکتور عناصر تزئینی',
+                tp_desc      = '[sl]p[sr]نتخابات یکی از مهم[and]zwnj[semi]ترین رویدادهای سیاسی در هر کشوری است[dot] در این رویداد، مردم برای انتخاب نمایندگان خود در مجلس، شورای شهر و سایر نهادهای سیاسی شرکت می[and]zwnj[semi]کنند[dot] برای موفقیت در انتخابات، داشتن یک کمپین تبلیغاتی موثر ضروری است[dot] یکی از مهم[and]zwnj[semi]ترین عناصر یک کمپین تبلیغاتی،[and]nbsp[semi][sl]strong[sr]پوستر انتخابات[sl]/strong[sr][and]nbsp[semi]و[and]nbsp[semi][sl]strong[sr]بنر انتخابات[sl]/strong[sr][and]nbsp[semi]است[dot] شما اگر مجری یک کمپین تبلیغاتی برای بنر و پوستر انتخاباتی باشید باید شناخت کاملی نسبت به طرح های لایه باز انتخابات و همچنین پیام های منتقل شده با بنر انتخاباتی داشته باشید[dot][sl]/p[sr]
+[sl]p[sr]بنر و پوستر انتخاباتی ابزارهای تبلیغاتی قدرتمندی هستند که می[and]zwnj[semi]توانند پیام[and]zwnj[semi]های انتخاباتی را به مخاطبان زیادی منتقل کنند[dot] این ابزارها می[and]zwnj[semi]توانند در مکان[and]zwnj[semi]های مختلف مانند خیابان[and]zwnj[semi]ها، میادین عمومی، ایستگاه[and]zwnj[semi]های مترو و سایر اماکن پرتردد نصب شوند[dot][sl]/p[sr]
+[sl]p[sr]برای طراحی یک[and]nbsp[semi][sl]strong[sr]پوستر یا بنر انتخاباتی[sl]/strong[sr][and]nbsp[semi]موثر، باید نکات زیر را در نظر گرفت[colon][sl]/p[sr]
+[sl]ul[sr]
+[sl]li[sr]پیام واضح و مختصر[colon] بنر و پوستر انتخاباتی باید پیامی واضح و مختصر را به مخاطبان منتقل کند[dot] این پیام باید به گونه[and]zwnj[semi]ای باشد که در نگاه اول توجه مخاطب را جلب کند و در ذهن او ماندگار شود[dot][sl]/li[sr]
+[sl]/ul[sr]
+[sl]ul[sr]
+[sl]li[sr]استفاده از تصاویر و رنگ[and]zwnj[semi]های جذاب[colon] استفاده از تصاویر و رنگ[and]zwnj[semi]های جذاب می[and]zwnj[semi]تواند به جلب توجه مخاطب و انتقال بهتر پیام کمک کند[dot]با توجه به اینکه بنرهای انتخاباتی در سطح شهر نسب می شوند جذابیت بصری آنها بسیار پر اهمیت می باشد[dot][sl]/li[sr]
+[sl]/ul[sr]
+[sl]ul[sr]
+[sl]li[sr]استفاده از فونت[and]zwnj[semi]های خوانا[colon] فونت[and]zwnj[semi]های خوانا و قابل تشخیص باید در طراحی بنر و پوستر انتخاباتی استفاده شود[dot] مخاطب شما باید بتواند در یک نگاه شعار و هدف اصلی بنر انتخاباتی را درک کند و پوستر انتخاباتی شما باید طوری طراحی و اجرا شده باشد که بتواند نگاه مخاطب را جذب کند[dot][sl]/li[sr]
+[sl]/ul[sr]
+[sl]h3[sr]دانلود بنر و پوستر انتخابات[sl]/h3[sr]
+[sl]p[sr]در این صفحه، هزاران طرح بنر و پوستر انتخاباتی وجود دارد که شما میتوانید بنا به نیاز خود از آنها استفاده کنید[dot] از نظر نوع این طرح ها به صورت زیر تقسیم بندی می شود[dot][sl]/p[sr]
+[sl]p[sr][sl]strong[sr]طرح های لایه باز انتخابات[colon][sl]/strong[sr][and]nbsp[semi]این طرح ها شامل طرح های انتخاباتی قابل ویرایش با نرم افزار های گرافیکی مانند فوتوشاپ هستند[dot] این نوع فایل ها برای افرادی مناسب است که توانایی ویرایش و شخصی سازی فایل ها توسط نرم افزارها را دارند[dot] پس اگر یک طراح هستید و یا به نرم افزار های گرافیکی تسلط دارید، دانلود طرح های لایه باز انتخاباتی برای شما گزینه مطلوب است[dot][sl]/p[sr]
+[sl]p[sr][sl]strong[sr]طرح های آماده انتخابات[colon][sl]/strong[sr][and]nbsp[semi]طرح های آماده قابل ویرایش نیستند[dot] این طرح ها به صورت آماده برای شما فراهم آمده[and]zwnj[semi]اند و شما باید از همان بنر یا پوستر استفاده کنید[dot][sl]/p[sr]
+[sl]p[sr][sl]strong[sr]طرح های رایگان انتخابات[colon][sl]/strong[sr][and]nbsp[semi]طرح های انتخاباتی موجود در tarh[dot]ir به صورت رایگان و غیر رایگان هستند[dot] اگر فایل های رایگان ما مورد پسند شما بود، می[and]zwnj[semi]توانید بدون هیچ محدودیتی اقدام به دانلود رایگان فایل های انتخاباتی بفرمایید[dot][sl]/p[sr]
+[sl]p[sr][sl]strong[sr]طرح های ویژه انتخابات[colon][sl]/strong[sr][and]nbsp[semi]طرح های ویژه انتخاباتی طرح هایی هستند که توسط طراحان ویژه طراحی شده اند و جزئیات زیادی در آنها در نظر گرفته است[dot] همچنین تمام این طرح ها به صورت لایه باز هستند و امکان شخصی سازی توسط شما را خواهند داشت[dot] اگر میخواهید یک کمپین موفق و خاص داشته باشید حتما از طرح های لایه باز و ویژه استفاده بفرمایید[dot][sl]/p[sr]
+[sl]p[sr]شما طرح زیادی را می توانید برای کمپین های انتخاباتی خود به کار ببرید[dot] طرح دات آی آر همه این موارد را برای شما فراهم اورده است[dot] از طرح های لایه باز بنر انتخاباتی تا طرح لایه باز خام انتخابات و پوستر های انتخاباتی متفاوت[dot][sl]/p[sr]
+[sl]h2[sr]بنر انتخابات[sl]/h2[sr]
+[sl]p[sr]بنرهای انتخاباتی ابزار قوی بازاریابی هستند[dot] به صورت عمومی، بنرها دارای اطلاعات اساسی درباره کاندیدا هستند، از جمله نام، عکس و یا شعار انتخاباتی[dot] آنها به[and]zwnj[semi]درستی طراحی شده و در سطح شهر نصب می شوند تا تاثیر زیادی را بر مخاطب بگذارند[dot] بنر های انتخاباتی معمولا برای اشنایی اولیه مخاطب با کاندیدای مد نظر چاپ می شوند[dot][sl]/p[sr]
+[sl]p[sr]ما برای شما متفاوت ترین طرح لایه باز انتخابات را فراهم کرده ایم[dot] از بنر انتخاباتی لایه باز رایگان تا بنر های انتخاباتی حرفه ای که طبق نیازتان می توانید از آنها استفاده کنید[dot][sl]/p[sr]
+[sl]h2[sr]پوستر انتخابات[sl]/h2[sr]
+[sl]p[sr]مانند بنرها، پوسترهای انتخاباتی اطلاعات کلیدی درباره کاندیدا را ارائه می[and]zwnj[semi]دهند[dot] با این[and]zwnj[semi]حال، پوسترها معمولا در اندازه[and]zwnj[semi]های کوچکتری قرار دارند و برای توزیع وسیع در مکان[and]zwnj[semi]های عمومی، مثل کافی[and]zwnj[semi]شاپ[and]zwnj[semi]ها، مراکز محلی و غیره استفاده می[and]zwnj[semi]شوند[dot][sl]/p[sr]',
+                tp_title   = 'وکتور عناصر تزئینی',
+                `tp_seo_title`  = 'وکتور عناصر تزئینی',
+                `tp_short_desc`  = 'نتخابات یکی از مهم‌ترین رویدادهای سیاسی در هر کشوری است. در این رویداد، مردم برای انتخاب نمایندگان خود در مجلس، شورای شهر و سایر نهادهای سیاسی شرکت ',
+                tp_uid      = 1,
+                tp_publish      = no,
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1406;
+#[error]:         <font color="#FF0000">Data too long for column 'tp_req' at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/financial/report?date_from=&date_to=&type=all&status=all&cid=0&members=%7B%7D&pid=%7B%222%22%3A%7B%22title%22%3A%22%D8%B7%D8%B1%D8%AD+%D8%AE%D8%A7%D9%85+%DA%A9%D8%A7%D8%B1%D8%AA+%D9%88%DB%8C%D8%B2%DB%8C%D8%AA+%D8%B4%D9%87%D8%B1%D8%A8%D8%A7%D8%B2%DB%8C%22%7D%2C%224%22%3A%7B%22title%22%3A%22%D8%A8%D9%86%D8%B1+%D9%84%D8%A7%DB%8C%D9%87+%D8%A8%D8%A7%D8%B2+%D8%AE%DB%8C%D8%B1+%D9%85%D9%82%D8%AF%D9%85+%D9%85%D8%B3%D8%A7%D9%81%D8%B1%D8%A7%D9%86+%D9%86%D9%88%D8%B1%D9%88%D8%B2%DB%8C%22%7D%7D;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-11-19 14:55:38;
+#[data]:          
+api/v1/financial/report=;
+#[sql]:
+ 
+            INSERT INTO
+                `log_url`
+            SET
+              `tp_uid`   = '1'
+            , `tp_file`  = 'application/control/api.php'
+            , `tp_req`   = '/tarhpich/api/v1/financial/report_qudate_from_isq_anddate_to_isq_andtype_isqall_andstatus_isqall_andcid_isq0_andmembers_isq_acl_acr_andpid_isq_acl_wq2_wq:_acl_wqtitle_wq:_wqطرح خام کارت ویزیت شهربازی_wq_acr,_wq4_wq:_acl_wqtitle_wq:_wqبنر لایه باز خیر مقدم مسافران نوروزی_wq_acr_acr'
+            , `tp_class` = 'api'
+            , `tp_method`= 'v1'
+            , `tp_ip`    = '::1'
+            , `tp_agent` = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+            , `tp_ajax`  = '0'
+            , `tp_mac`   = ''
+            , `tp_ref`   = 'http://localhost/tarhpich/admin/report'
+            , `tp_date`  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_transaction`.`tp_amount` at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-20 12:53:19;
+#[data]:          
+checkout=;
+#[sql]:
+  INSERT INTO
+                `tp_transaction`
+            SET
+                tp_type     = 'product',
+                tp_amount   = '',
+                tp_token    = '',
+                tp_mid      = '3',
+                tp_status   = 'pend',
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_transaction`.`tp_amount` at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-20 12:54:19;
+#[data]:          
+checkout=;
+#[sql]:
+  INSERT INTO
+                `tp_transaction`
+            SET
+                tp_type     = 'product',
+                tp_amount   = '',
+                tp_token    = '',
+                tp_mid      = '3',
+                tp_status   = 'pend',
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1062;
+#[error]:         <font color="#FF0000">Duplicate entry '' for key 'uniq';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-20 12:56:32;
+#[data]:          
+checkout=;
+#[sql]:
+  INSERT INTO
+                `tp_transaction`
+            SET
+                tp_type     = 'product',
+                tp_amount   = '10000',
+                tp_token    = '',
+                tp_mid      = '3',
+                tp_status   = 'pend',
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1062;
+#[error]:         <font color="#FF0000">Duplicate entry '' for key 'uniq';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-20 12:57:31;
+#[data]:          
+checkout=;
+#[sql]:
+  INSERT INTO
+                `tp_transaction`
+            SET
+                tp_type     = 'product',
+                tp_amount   = '10000',
+                tp_token    = '',
+                tp_mid      = '3',
+                tp_status   = 'pend',
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_transaction`.`tp_mid` at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/plan/bank/1;
+#[file]:          application/control/plan.php;
+#[class]:         plan;
+#[method]:        bank;
+#[date]:          2023-11-21 13:48:52;
+#[data]:          
+plan/bank/1=;
+#[sql]:
+  INSERT INTO
+                `tp_transaction`
+            SET
+                tp_type     = 'subscription',
+                tp_bank   = 'zarinpal',
+                tp_amount   = '10800',
+                tp_mid      = '',
+                tp_status   = 'pend',
+                tp_date     = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_member_plan`.`tp_transaction_id` at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/plan/bank/1;
+#[file]:          application/control/plan.php;
+#[class]:         plan;
+#[method]:        bank;
+#[date]:          2023-11-21 13:49:11;
+#[data]:          
+plan/bank/1=;
+#[sql]:
+  INSERT INTO
+                `tp_member_plan`
+            SET
+                tp_mid            = '1',
+                tp_transaction_id        = '',
+                tp_plan_id        = '1',
+                tp_start_date     = now(),
+                tp_end_date       = now() + interval 30 day ,
+                tp_status         = 'pend',
+                tp_date           = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1265;
+#[error]:         <font color="#FF0000">Data truncated for column 'tp_status' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/plan/bank/1;
+#[file]:          application/control/plan.php;
+#[class]:         plan;
+#[method]:        bank;
+#[date]:          2023-11-21 15:17:15;
+#[data]:          
+plan/bank/1=;
+#[sql]:
+  INSERT INTO
+                `tp_member_plan`
+            SET
+                tp_transaction_id = '45',
+                tp_status         = '',
+                tp_mid            = '3',
+                tp_plan_id        = '1',
+                tp_end_date = now() + interval 30 day , 
+                tp_start_date     = now(),
+                tp_date           = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+                tp_mid  = 23' at line 18;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/upgrade_profile;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-25 12:06:21;
+#[data]:          
+api/cv1/member/upgrade_profile=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_designers`
+            SET
+                tp_expertise     = '',
+                tp_bank          = 'ملت',
+                tp_card_number   = '1254253565465456',
+                tp_name_en       = 'mojtaba',
+                tp_family_en     = 'chavoshi',
+                tp_province      = '349',
+                tp_address       = 'here',
+                tp_bio           = 'hich',
+                tp_national_code = '0921824033',
+                tp_slug          = 'mojtaba-chavoshi-509',
+                tp_sheba         = '925442656981911771111111',
+                tp_mid           = '23',
+                tp_city          = '388',
+                tp_date        = now()
+            WHERE
+                tp_mid  = 23
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+                tp_mid  = 23' at line 18;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/upgrade_profile;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-25 12:06:33;
+#[data]:          
+api/cv1/member/upgrade_profile=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_designers`
+            SET
+                tp_expertise     = '',
+                tp_bank          = 'ملت',
+                tp_card_number   = '1254253565465456',
+                tp_name_en       = 'mojtaba',
+                tp_family_en     = 'chavoshi',
+                tp_province      = '349',
+                tp_address       = 'here',
+                tp_bio           = 'hich',
+                tp_national_code = '0921824033',
+                tp_slug          = 'mojtaba-chavoshi-587',
+                tp_sheba         = '925442656981911771111111',
+                tp_mid           = '23',
+                tp_city          = '388',
+                tp_date        = now()
+            WHERE
+                tp_mid  = 23
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE
+                tp_mid  = 23' at line 18;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/upgrade_profile;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-25 12:10:00;
+#[data]:          
+api/cv1/member/upgrade_profile=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_designers`
+            SET
+                tp_expertise     = '_41_-_42_-_52_-_53_',
+                tp_bank          = 'ملت',
+                tp_card_number   = '9254411771111111',
+                tp_name_en       = 'mojtaba',
+                tp_family_en     = 'chavoshi',
+                tp_province      = '350',
+                tp_address       = 'here',
+                tp_bio           = 'none',
+                tp_national_code = '0921824033',
+                tp_slug          = 'mojtaba-chavoshi-119',
+                tp_sheba         = '925442656981911771111111',
+                tp_mid           = '23',
+                tp_city          = '396',
+                tp_date        = now()
+            WHERE
+                tp_mid  = 23
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_name_en' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/upgrade_profile;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-25 12:13:29;
+#[data]:          
+api/cv1/member/upgrade_profile=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_designers`
+            SET
+                tp_expertise     = '_41_-_42_-_52_-_53_',
+                tp_bank          = 'ملت',
+                tp_card_number   = '9254411771111111',
+                tp_name_en       = 'mojtaba',
+                tp_family_en     = 'chavoshi',
+                tp_province      = '350',
+                tp_address       = 'here',
+                tp_bio           = 'none',
+                tp_national_code = '0921824033',
+                tp_slug          = 'mojtaba-chavoshi-511',
+                tp_sheba         = '925442656981911771111111',
+                tp_mid           = '23',
+                tp_city          = '396',
+                tp_date        = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_slug' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/upgrade_profile;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-25 12:19:08;
+#[data]:          
+api/cv1/member/upgrade_profile=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_designers`
+            SET
+                tp_expertise     = '_41_-_42_-_52_-_53_',
+                tp_bank          = 'ملت',
+                tp_card_number   = '9254411771111111',
+                tp_province      = '350',
+                tp_address       = 'here',
+                tp_bio           = 'none',
+                tp_national_code = '0921824033',
+                tp_slug          = 'mojtaba-chavoshi-684',
+                tp_sheba         = '925442656981911771111111',
+                tp_mid           = '23',
+                tp_city          = '396',
+                tp_date        = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_date' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/upgrade_profile;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-11-25 12:19:23;
+#[data]:          
+api/cv1/member/upgrade_profile=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_designers`
+            SET
+                tp_expertise     = '_41_-_42_-_52_-_53_',
+                tp_bank          = 'ملت',
+                tp_card_number   = '9254411771111111',
+                tp_province      = '350',
+                tp_address       = 'here',
+                tp_bio           = 'none',
+                tp_national_code = '0921824033',
+                tp_sheba         = '925442656981911771111111',
+                tp_mid           = '23',
+                tp_city          = '396',
+                tp_date        = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_discount_codes`.`tp_mid` at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/financial/add_discount_code;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-25 16:33:49;
+#[data]:          
+api/v1/financial/add_discount_code=;
+#[sql]:
+ 
+				INSERT INTO
+					`tp_discount_codes`
+				SET
+					tp_percent    = '10',
+					tp_type       = 'public',
+					tp_mid        = '',
+					tp_date_start = '2023/11/22',
+					tp_date_end   = '2023/11/22',
+					tp_desc       = 'dwqdqwd',
+					tp_title  	  = 'qwdqwd',
+					tp_code       = '6501',
+					tp_date       = now()
+			;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1366;
+#[error]:         <font color="#FF0000">Incorrect integer value: '' for column `tarhpich`.`tp_discount_codes`.`tp_mid` at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/financial/add_discount_code;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-25 16:35:19;
+#[data]:          
+api/v1/financial/add_discount_code=;
+#[sql]:
+ 
+                INSERT INTO
+                    `tp_discount_codes`
+                SET
+                    tp_percent    = '10',
+                    tp_type       = 'public',
+                    tp_mid        = '',
+                    tp_date_start = '2023/11/22',
+                    tp_date_end   = '2023/11/22',
+                    tp_desc       = 'dwqdqwd',
+                    tp_title  	  = 'qwdqwd',
+                    tp_code       = '6501',
+                    tp_date       = now()
+            ;
+#______________________________________________________________________
+ 
+ 

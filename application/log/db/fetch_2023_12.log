@@ -1,0 +1,516 @@
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tarhpich' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/member/view/tarhpich;
+#[file]:          application/control/back_end/member.php;
+#[class]:         member;
+#[method]:        view;
+#[date]:          2023-12-02 15:37:50;
+#[data]:          
+admin/member/view/tarhpich=;
+#[sql]:
+ SELECT
+                member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_type`                   AS `type`,
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_statistic_downloads`    AS `statistic_downloads`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                member_plan.`tp_start_date`        AS `start_date`,
+                member_plan.`tp_end_date`          AS `end_date`,
+                DATEDIFF(
+                    member_plan.`tp_end_date`
+                    , member_plan.`tp_start_date`
+                )                                  AS remaining_days,
+                plan.`tp_title`                    AS `plan`,
+                plan.`tp_period`                   AS `period`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request`
+            FROM
+                `tp_members`                AS `member` LEFT JOIN
+                `tp_member_plan` AS `member_plan`  ON(member_plan.tp_mid = member.tp_id and  member_plan.tp_status ='pend' )   LEFT JOIN
+                `tp_plan` AS `plan`  ON(plan.tp_id = member_plan.tp_plan_id )
+            WHERE
+                member.`tp_id` = tarhpich
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tarhpich' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/member/view/tarhpich;
+#[file]:          application/control/back_end/member.php;
+#[class]:         member;
+#[method]:        view;
+#[date]:          2023-12-02 15:38:03;
+#[data]:          
+admin/member/view/tarhpich=;
+#[sql]:
+ SELECT
+                member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_type`                   AS `type`,
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_statistic_downloads`    AS `statistic_downloads`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                member_plan.`tp_start_date`        AS `start_date`,
+                member_plan.`tp_end_date`          AS `end_date`,
+                DATEDIFF(
+                    member_plan.`tp_end_date`
+                    , member_plan.`tp_start_date`
+                )                                  AS remaining_days,
+                plan.`tp_title`                    AS `plan`,
+                plan.`tp_period`                   AS `period`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request`
+            FROM
+                `tp_members`                AS `member` LEFT JOIN
+                `tp_member_plan` AS `member_plan`  ON(member_plan.tp_mid = member.tp_id and  member_plan.tp_status ='pend' )   LEFT JOIN
+                `tp_plan` AS `plan`  ON(plan.tp_id = member_plan.tp_plan_id )
+            WHERE
+                member.`tp_id` = tarhpich
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'Array' in 'where clause';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/;
+#[file]:          application/control/dashboard/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-12-04 13:09:08;
+#[data]:          
+dashboard/=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`     AS `avatar`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                 `tp_product` AS product INNER JOIN 
+                `tp_category`  AS category ON(category.tp_id = product.tp_cid ) INNER JOIN
+                `tp_members`   AS member  ON(member.tp_id = product.tp_mid) INNER JOIN
+                `tp_designers` AS designer  ON(designer.tp_mid = member.tp_id)
+            WHERE
+                product.`tp_delete` = 0  AND product.tp_mid  IN (Array)
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 3;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_id' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/mani_haghighi;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        mani_haghighi;
+#[date]:          2023-12-04 16:02:26;
+#[data]:          
+designers/mani_haghighi=;
+#[sql]:
+ SELECT
+                COUNT(designer.tp_id) AS `cnt`
+            FROM
+                `tp_designer_followers` AS `followers`
+            WHERE
+            followers.tp_delete = 0  and followers.tp_did = 17 and followers.tp_mid = 9
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 6;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/update;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 16:26:51;
+#[data]:          
+api/cv1/product/update=;
+#[sql]:
+ SELECT
+                tp_cat_path      AS cat_path
+			FROM
+                `tp_category`
+			WHERE
+                `tp_delete` = '0' AND tp_id =  
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'ordr.tp_price' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/;
+#[file]:          application/control/dashboard/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-12-06 11:27:25;
+#[data]:          
+dashboard/=;
+#[sql]:
+ SELECT
+                SUM(`ordr`.`tp_price`) AS `total_price`
+            FROM
+                `tp_order`    AS `ordr`    INNER JOIN
+                `tp_order_products`  AS order_products ON(order_products.tp_oid = ordr.tp_id )  INNER JOIN
+                `tp_product`  AS products      ON(products.tp_id = order_products.tp_pid AND `products`.`tp_mid` = 9 )
+            WHERE
+                `ordr`.`tp_delete` = 0 AND `ordr`.`tp_status` = 'done' AND DATE(`ordr`.`tp_date`) = ''
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND comments.tp_pbid  = '4' )
+                 ORDER BY comments.tp_id DESC...' at line 24;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/product/banner;
+#[file]:          application/control/dashboard/product.php;
+#[class]:         product;
+#[method]:        banner;
+#[date]:          2023-12-06 15:23:08;
+#[data]:          
+dashboard/product/banner=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                products.`tp_slug` AS product_slug,
+                products.`tp_pic` AS product_pic,
+                products.`tp_title` AS product_name,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_product` AS products        ON ( products.tp_id = comments.tp_pbid )
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_parent_mid )
+            WHERE
+                comments.`tp_delete` = 0
+                 AND  ( AND comments.tp_pbid  = '4' )
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND  comments.tp_pbid='4')
+                 ORDER BY comments.tp_id DESC
+  ...' at line 24;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/product/banner;
+#[file]:          application/control/dashboard/product.php;
+#[class]:         product;
+#[method]:        banner;
+#[date]:          2023-12-06 15:24:08;
+#[data]:          
+dashboard/product/banner=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                products.`tp_slug` AS product_slug,
+                products.`tp_pic` AS product_pic,
+                products.`tp_title` AS product_name,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_product` AS products        ON ( products.tp_id = comments.tp_pbid )
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_parent_mid )
+            WHERE
+                comments.`tp_delete` = 0
+                 AND ( AND  comments.tp_pbid='4')
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND  comments.tp_pbid='4')
+                 ORDER BY comments.tp_id DESC
+  ...' at line 24;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/product/banner;
+#[file]:          application/control/dashboard/product.php;
+#[class]:         product;
+#[method]:        banner;
+#[date]:          2023-12-06 15:24:34;
+#[data]:          
+dashboard/product/banner=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                products.`tp_slug` AS product_slug,
+                products.`tp_pic` AS product_pic,
+                products.`tp_title` AS product_name,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_product` AS products        ON ( products.tp_id = comments.tp_pbid )
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_parent_mid )
+            WHERE
+                comments.`tp_delete` = 0
+                 AND ( AND  comments.tp_pbid='4')
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND  comments.tp_pbid='4')
+                 ORDER BY comments.tp_id DESC
+  ...' at line 24;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/product/banner;
+#[file]:          application/control/dashboard/product.php;
+#[class]:         product;
+#[method]:        banner;
+#[date]:          2023-12-06 15:25:05;
+#[data]:          
+dashboard/product/banner=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                products.`tp_slug` AS product_slug,
+                products.`tp_pic` AS product_pic,
+                products.`tp_title` AS product_name,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_product` AS products        ON ( products.tp_id = comments.tp_pbid )
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_parent_mid )
+            WHERE
+                comments.`tp_delete` = 0
+                 AND ( AND  comments.tp_pbid='4')
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_tag' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/util/slug_validation?slug=asdf&table=tag&id=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-12-31 13:05:34;
+#[data]:          
+api/v1/util/slug_validation=;
+#[sql]:
+ 
+            SELECT
+				tp_id AS id
+            FROM
+                `tp_tag`
+            WHERE
+                 `tp_delete` = '0'  AND tp_slug LIKE 'asdf'
+            ORDER BY   tp_id DESC
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_tag' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/util/slug_validation?slug=asdfd&table=tag&id=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-12-31 13:05:41;
+#[data]:          
+api/v1/util/slug_validation=;
+#[sql]:
+ 
+            SELECT
+				tp_id AS id
+            FROM
+                `tp_tag`
+            WHERE
+                 `tp_delete` = '0'  AND tp_slug LIKE 'asdfd'
+            ORDER BY   tp_id DESC
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_tag' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/util/slug_validation?slug=sadd&table=tag&id=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-12-31 13:05:46;
+#[data]:          
+api/v1/util/slug_validation=;
+#[sql]:
+ 
+            SELECT
+				tp_id AS id
+            FROM
+                `tp_tag`
+            WHERE
+                 `tp_delete` = '0'  AND tp_slug LIKE 'sadd'
+            ORDER BY   tp_id DESC
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_tag' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/util/slug_validation?slug=sadd&table=tag&id=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-12-31 13:06:37;
+#[data]:          
+api/v1/util/slug_validation=;
+#[sql]:
+ 
+            SELECT
+				tp_id AS id
+            FROM
+                `tp_tag`
+            WHERE
+                 `tp_delete` = '0'  AND tp_slug LIKE 'sadd'
+            ORDER BY   tp_id DESC
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY designer.tp_mid
+         LIMIT 0 , 30' at line 19;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-12-31 13:16:45;
+#[data]:          ;
+#[sql]:
+ SELECT
+                member.tp_id                     AS `id`,
+                member.`tp_slug`                 AS `slug`,
+                designer.`tp_expertise`          AS `expertise`,
+                designer.`tp_statistic_follower` AS `statistic_follower`,
+                designer.`tp_statistic_product`  AS `statistic_product`,
+                designer.`tp_statistic_rate`     AS `statistic_rate`,
+                CONCAT(
+                    member.tp_family,
+                    ' ',
+                    member.tp_name )             AS `full_name`,
+                member.tp_pic                    AS `pic`
+            FROM
+                `tp_members`   AS `member`       INNER JOIN
+                `tp_designers` AS `designer`
+            WHERE
+                member.tp_delete = 0
+            ORDER BY
+                 designer.`tp_statistic_rate` DESC GROUP BY designer.tp_mid
+         LIMIT 0 , 30;
+#______________________________________________________________________
+ 
+ 

@@ -1,0 +1,33 @@
+{
+  "name": "tarhpich",
+  "version": "1.0.0",
+  "description": "",
+  "mode": "development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build": "webpack",
+    "admin": "webpack --config webpack.config.js", 
+    "client": "webpack --config webpack.client.js",
+    "auth": "webpack --config webpack.auth.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dropzone": "^6.0.0-beta.2",
+    "pristinejs": "^0.1.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "live-server": "^1.2.2",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  }
+}

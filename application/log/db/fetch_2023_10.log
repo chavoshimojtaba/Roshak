@@ -1,0 +1,1161 @@
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'blog.tp_blog_date' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-10-02 11:49:18;
+#[data]:          ;
+#[sql]:
+ SELECT
+                blog.tp_id            AS `id`, 
+                blog.`tp_pic`         AS `img`, 
+                blog.`tp_blog_date`        AS `blog_date`,
+                blog.`tp_title`        AS `title`,
+                blog.`tp_reading_duration`        AS `reading_duration`,
+                blog.`tp_author`  AS `author` 
+            FROM
+                `tp_blog`     AS blog      
+            WHERE
+                blog.`tp_delete` = 0 
+            ORDER BY blog.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_slug' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        index;
+#[date]:          2023-10-03 17:40:15;
+#[data]:          
+designers=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower` AS `statistic_follower`,
+                designer.`tp_statistic_product`  AS `statistic_product`,
+                designer.`tp_title`              AS `title`,
+                designer.`tp_slug`               AS `slug`,
+                designer.`tp_meta`               AS `meta`,
+                designer.`tp_statistic_rate`     AS `statistic_rate`,
+                designer.`tp_expertise`          AS `expertise`,
+                member.tp_id                     AS `id`,
+                member.tp_mobile                 AS `mobile`,
+                member.tp_slug                   AS `slug`,
+                member.tp_email                  AS `email`,
+                DATE(member.tp_date)             AS `createAt`,
+                member.tp_type                   AS `type`,
+                member.tp_status                 AS `status`,
+                CONCAT(
+                    member.tp_family,
+                    ' ',
+                    member.tp_name )             AS `full_name`,
+                member.tp_pic                    AS `img`
+            FROM
+                `tp_members`   AS `member`       INNER JOIN
+                `tp_designers` AS `designer`
+            WHERE
+                member.tp_delete = 0  
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/favorites?page=2&limit=10&total=undefined&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-10-04 15:08:19;
+#[data]:          
+api/cv1/member/favorites=;
+#[sql]:
+ SELECT
+                COUNT(favorite.tp_id)       AS `cnt`
+            FROM
+                tp_member_favorites favorite  INNER JOIN
+                tp_product product ON(product.tp_id = favorite.tp_pid)
+            WHERE
+                favorite.tp_delete = 0 AND favorite.tp_mid=
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_id' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-10-04 15:15:45;
+#[data]:          ;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_title AS `product_name`,
+                product.tp_pic AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_favorites favorite  INNER JOIN
+                tp_product product ON(product.tp_id = favorite.tp_pid)
+            WHERE
+                favorite.tp_delete = 0  AND favorite.tp_mid=1
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_id' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/favorites?page=2&limit=10&total=undefined&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-10-04 15:15:45;
+#[data]:          
+api/cv1/member/favorites=;
+#[sql]:
+ SELECT
+                favorite.tp_id       AS `id`,
+                product.tp_id        AS `pid`,
+                member.tp_id         AS `mid`,
+                product.tp_title AS `product_name`,
+                product.tp_pic AS `thumbnail`,
+                favorite.tp_date     AS `createAt`
+            FROM
+                tp_member_favorites favorite  INNER JOIN
+                tp_product product ON(product.tp_id = favorite.tp_pid)
+            WHERE
+                favorite.tp_delete = 0  AND favorite.tp_mid=1
+            ORDER BY
+                favorite.tp_id DESC
+         LIMIT 10 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'blog.sp_id' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          application/control/home.php;
+#[class]:         home;
+#[method]:        index;
+#[date]:          2023-10-04 15:28:33;
+#[data]:          ;
+#[sql]:
+  SELECT COUNT(blog.sp_id) AS cnt FROM 
+                `tp_blog`     AS blog
+            WHERE
+                blog.`tp_delete` = 0 
+            ORDER BY blog.tp_id DESC
+         ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'favorite.sp_id' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/favorites?page=2&limit=10&total=undefined&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-10-04 15:28:34;
+#[data]:          
+api/cv1/member/favorites=;
+#[sql]:
+  SELECT COUNT(favorite.sp_id) AS cnt FROM 
+                tp_member_favorites favorite  INNER JOIN
+                tp_product product ON(product.tp_id = favorite.tp_pid)
+            WHERE
+                favorite.tp_delete = 0  AND favorite.tp_mid=1
+            ORDER BY
+                favorite.tp_id DESC
+         ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'member.tp_change_type_request = 'confirm' 
+                 ORDER BY member....' at line 16;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        index;
+#[date]:          2023-10-04 19:05:35;
+#[data]:          
+designers=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower` AS `statistic_follower`,
+                designer.`tp_statistic_product`  AS `statistic_product`,
+                designer.`tp_statistic_rate`     AS `statistic_rate`,
+                designer.`tp_expertise`          AS `expertise`,
+                DATE(member.tp_date)             AS `createAt`,
+                member.`tp_slug`                 AS `slug`,
+                member.tp_id                     AS `id`,
+                CONCAT( member.tp_family,' ',
+                    member.tp_name )             AS `full_name`,
+                member.tp_pic                    AS `avatar`
+            FROM
+                `tp_members`   AS `member`   INNER JOIN
+                `tp_designers` AS `designer` ON(designer.tp_mid = member.tp_mid)
+            WHERE
+                member.tp_delete = 0  member.tp_change_type_request = 'confirm' 
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_mid' in 'on clause';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        index;
+#[date]:          2023-10-04 19:05:50;
+#[data]:          
+designers=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower` AS `statistic_follower`,
+                designer.`tp_statistic_product`  AS `statistic_product`,
+                designer.`tp_statistic_rate`     AS `statistic_rate`,
+                designer.`tp_expertise`          AS `expertise`,
+                DATE(member.tp_date)             AS `createAt`,
+                member.`tp_slug`                 AS `slug`,
+                member.tp_id                     AS `id`,
+                CONCAT( member.tp_family,' ',
+                    member.tp_name )             AS `full_name`,
+                member.tp_pic                    AS `avatar`
+            FROM
+                `tp_members`   AS `member`   INNER JOIN
+                `tp_designers` AS `designer` ON(designer.tp_mid = member.tp_mid)
+            WHERE
+                member.tp_delete = 0  AND member.tp_change_type_request = 'confirm' 
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY
+                notifications.tp_id DESC
+         LIMIT 0 , 5' at line 11;</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/notification;
+#[file]:          application/control/dashboard/notification.php;
+#[class]:         notification;
+#[method]:        index;
+#[date]:          2023-10-07 22:21:29;
+#[data]:          
+dashboard/notification=;
+#[sql]:
+ SELECT
+                notifications.tp_id     AS id,
+                notifications.tp_title AS `title`,
+                notifications.tp_read  AS `read`,
+                notifications.tp_text  AS `text`,
+                notifications.tp_date   AS createAt
+            FROM
+                tp_notifications AS  notifications
+            WHERE
+                notifications.tp_delete = 0 AND notifications.tp_mid = 
+            ORDER BY
+                notifications.tp_id DESC
+         LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY
+                notifications.tp_id DESC
+         LIMIT 0 , 5' at line 11;</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/notification;
+#[file]:          application/control/dashboard/notification.php;
+#[class]:         notification;
+#[method]:        index;
+#[date]:          2023-10-07 22:22:10;
+#[data]:          
+dashboard/notification=;
+#[sql]:
+ SELECT
+                notifications.tp_id     AS id,
+                notifications.tp_title AS `title`,
+                notifications.tp_read  AS `read`,
+                notifications.tp_text  AS `text`,
+                notifications.tp_date   AS createAt
+            FROM
+                tp_notifications AS  notifications
+            WHERE
+                notifications.tp_delete = 0 AND notifications.tp_mid = 
+            ORDER BY
+                notifications.tp_id DESC
+         LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY
+                notifications.tp_id DESC
+         LIMIT 0 , 5' at line 11;</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/notification;
+#[file]:          application/control/dashboard/notification.php;
+#[class]:         notification;
+#[method]:        index;
+#[date]:          2023-10-07 22:22:13;
+#[data]:          
+dashboard/notification=;
+#[sql]:
+ SELECT
+                notifications.tp_id     AS id,
+                notifications.tp_title AS `title`,
+                notifications.tp_read  AS `read`,
+                notifications.tp_text  AS `text`,
+                notifications.tp_date   AS createAt
+            FROM
+                tp_notifications AS  notifications
+            WHERE
+                notifications.tp_delete = 0 AND notifications.tp_mid = 
+            ORDER BY
+                notifications.tp_id DESC
+         LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8;</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-10-08 10:59:59;
+#[data]:          
+dashboard/ticket=;
+#[sql]:
+  SELECT COUNT(tickets.tp_id) AS cnt FROM 
+                tp_tickets tickets INNER JOIN
+                tp_ticket_comments comments ON ( comments.tp_tid = tickets.tp_id ) INNER JOIN
+
+                tp_role roles ON(roles.tp_id = tickets.tp_rid)
+            WHERE
+                tickets.tp_delete = 0 AND tickets.tp_mid = 1
+                AND comments.tp_id = (SELECT tp_id ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8;</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-10-08 11:00:26;
+#[data]:          
+dashboard/ticket=;
+#[sql]:
+  SELECT COUNT(tickets.tp_id) AS cnt FROM 
+                tp_tickets tickets INNER JOIN
+                tp_ticket_comments comments ON ( comments.tp_tid = tickets.tp_id ) INNER JOIN
+
+                tp_role roles ON(roles.tp_id = tickets.tp_rid)
+            WHERE
+                tickets.tp_delete = 0 AND tickets.tp_mid = 1
+                AND comments.tp_id = (SELECT tp_id ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8;</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-10-08 11:00:41;
+#[data]:          
+dashboard/ticket=;
+#[sql]:
+  SELECT COUNT(tickets.tp_id) AS cnt FROM 
+                tp_tickets tickets INNER JOIN
+                tp_ticket_comments comments ON ( comments.tp_tid = tickets.tp_id ) INNER JOIN
+
+                tp_role roles ON(roles.tp_id = tickets.tp_rid)
+            WHERE
+                tickets.tp_delete = 0 AND tickets.tp_mid = 1
+                AND comments.tp_id = (SELECT tp_id ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'role.tp_show_in_ticket' in 'where clause';</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket?role=2&status=open;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-10-08 14:20:11;
+#[data]:          
+dashboard/ticket=;
+#[sql]:
+ SELECT
+                role.tp_id AS id,
+                role.tp_name AS name
+            FROM
+                `tp_role` as   role
+            WHERE
+                role.`tp_delete` = '0'  and role.`tp_show_in_ticket` = 'yes'
+            ORDER BY  role.tp_id DESC
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_slug' in 'field list';</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/1;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        1;
+#[date]:          2023-10-08 14:51:13;
+#[data]:          
+designers/1=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower`   AS `statistic_follower`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                designer.`tp_statistic_rate`       AS `statistic_rate`,
+                designer.`tp_title`       AS `title`,
+                designer.`tp_slug`       AS `slug`,
+                designer.`tp_meta`       AS `meta`,
+                designer.`tp_expertise`            AS `expertise`,
+                member.`tp_id`                     AS `id`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`
+            FROM
+                `tp_members` AS `member` INNER JOIN
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id AND member.`tp_slug` = '1')
+
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_slug' in 'field list';</font>
+#[uid]:           18;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/1;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        1;
+#[date]:          2023-10-08 14:51:47;
+#[data]:          
+designers/1=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower`   AS `statistic_follower`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                designer.`tp_statistic_rate`       AS `statistic_rate`,
+                designer.`tp_title`       AS `title`,
+                designer.`tp_slug`       AS `slug`,
+                designer.`tp_meta`       AS `meta`,
+                designer.`tp_expertise`            AS `expertise`,
+                member.`tp_id`                     AS `id`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`
+            FROM
+                `tp_members` AS `member` INNER JOIN
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id AND member.`tp_slug` = '1')
+
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tags.tp_short_desc' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/tag/list?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=&type=blog;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-10-08 15:03:46;
+#[data]:          
+api/v1/tag/list=;
+#[sql]:
+ SELECT
+                tags.tp_id           AS id,
+                tags.`tp_short_desc` AS short_desc,
+                tags.`tp_title_1`    AS title_1,
+                tags.`tp_title`      AS title,
+				'محصولات'             AS `products`,
+                tags.`tp_slug`       AS `slug`,
+                tags.`tp_desc`       AS `desc`,
+                tags.`tp_meta`       AS meta,
+                tags.tp_date         AS createAt
+            FROM
+                `tp_blog_tags` AS tags
+            WHERE
+                tags.`tp_delete` = 0   ORDER BY tags.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_slug' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/1;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        1;
+#[date]:          2023-10-08 15:10:02;
+#[data]:          
+designers/1=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower`   AS `statistic_follower`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                designer.`tp_statistic_rate`       AS `statistic_rate`,
+                designer.`tp_title`       AS `title`,
+                designer.`tp_slug`       AS `slug`,
+                designer.`tp_meta`       AS `meta`,
+                designer.`tp_expertise`            AS `expertise`,
+                member.`tp_id`                     AS `id`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`
+            FROM
+                `tp_members` AS `member` INNER JOIN
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id AND member.`tp_slug` = '1')
+
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_slug' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/zahra_moghadam;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        zahra_moghadam;
+#[date]:          2023-10-11 14:18:12;
+#[data]:          
+designers/zahra_moghadam=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower`   AS `statistic_follower`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                designer.`tp_statistic_rate`       AS `statistic_rate`,
+                designer.`tp_title`       AS `title`,
+                designer.`tp_slug`       AS `slug`,
+                designer.`tp_meta`       AS `meta`,
+                designer.`tp_expertise`            AS `expertise`,
+                member.`tp_id`                     AS `id`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`
+            FROM
+                `tp_members` AS `member` INNER JOIN
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id AND member.`tp_slug` = 'zahra_moghadam')
+
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tickets.tp_id' in 'order clause';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/zahra_moghadam?filetype=image;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        zahra_moghadam;
+#[date]:          2023-10-12 13:33:04;
+#[data]:          
+designers/zahra_moghadam=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                `tp_product`    AS product  INNER JOIN
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id =product.tp_mid)
+            WHERE
+                product.`tp_delete` = 0
+                 ORDER BY tickets.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_statistic_product' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/zahra_moghadam?filetype=image;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        zahra_moghadam;
+#[date]:          2023-10-12 14:13:26;
+#[data]:          
+designers/zahra_moghadam=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`    AS `avatar`,
+                member.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                `tp_product`    AS product  INNER JOIN
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid   AND category.tp_filetype  LIKE     'image' ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id =product.tp_mid)
+            WHERE
+                product.`tp_delete` = 0   AND category.tp_filetype  LIKE     'image'
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'comments.tp_target_mid' in 'on clause';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/comment;
+#[file]:          application/control/dashboard/comment.php;
+#[class]:         comment;
+#[method]:        index;
+#[date]:          2023-10-17 16:32:32;
+#[data]:          
+dashboard/comment=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_target_mid )
+            WHERE
+                comments.`tp_delete` = 0
+	            AND (comments.tp_mid = 1 || comments.tp_parent_mid = 1)
+                
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_products' doesn't exist;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/comment;
+#[file]:          application/control/dashboard/comment.php;
+#[class]:         comment;
+#[method]:        index;
+#[date]:          2023-10-17 16:47:26;
+#[data]:          
+dashboard/comment=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                products.`tp_name` AS product_name,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_products` AS products        ON ( products.tp_id = comments.tp_pbid )
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_parent_mid )
+            WHERE
+                comments.`tp_delete` = 0
+	            AND (comments.tp_mid = 1 || comments.tp_parent_mid = 1)
+                
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'products.tp_name' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/comment;
+#[file]:          application/control/dashboard/comment.php;
+#[class]:         comment;
+#[method]:        index;
+#[date]:          2023-10-17 16:47:37;
+#[data]:          
+dashboard/comment=;
+#[sql]:
+ SELECT
+                comments.`tp_id` AS id,
+                comments.`tp_mid` AS mid,
+                comments.`tp_publish` AS publish,
+                comments.`tp_pbid` AS pbid,
+                comments.`tp_pid` AS pid,
+                comments.`tp_rate` AS rate,
+                products.`tp_name` AS product_name,
+                comments.`tp_rate` AS rate,
+                members.tp_pic  AS `img`,
+                CONCAT( members.tp_name, ' ', members.tp_family )  AS `full_name`,
+                CONCAT( members_parent.tp_name, ' ', members_parent.tp_family )  AS `parent_full_name`,
+                comments.`tp_text` AS `text`,
+                comments.tp_date AS createAt
+            FROM
+                tp_product_comments AS comments
+                INNER JOIN `tp_product` AS products        ON ( products.tp_id = comments.tp_pbid )
+                INNER JOIN `tp_members` AS members        ON ( members.tp_id = comments.tp_mid )
+                LEFT JOIN `tp_members`  AS members_parent ON ( members_parent.tp_id = comments.tp_parent_mid )
+            WHERE
+                comments.`tp_delete` = 0
+	            AND (comments.tp_mid = 1 || comments.tp_parent_mid = 1)
+                
+                 ORDER BY comments.tp_id DESC
+             LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'designer.`tp_id`                    AS `id`,
+                designer.`tp_st...' at line 14;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/profile;
+#[file]:          application/control/dashboard/profile.php;
+#[class]:         profile;
+#[method]:        index;
+#[date]:          2023-10-18 16:25:09;
+#[data]:          
+dashboard/profile=;
+#[sql]:
+ SELECT
+              member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_type`                   AS `type`,
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request`
+                designer.`tp_id`                    AS `id`,
+                designer.`tp_statistic_follower`    AS `statistic_follower`,
+                designer.`tp_statistic_product`     AS `statistic_product`,
+                designer.`tp_statistic_rate`        AS `statistic_rate`,
+                designer.`tp_title`                 AS `title`,
+                designer.`tp_slug`                  AS `slug`,
+                designer.`tp_meta`                  AS `meta`,
+                designer.`tp_bank`                  AS `bank`,
+                designer.`tp_national_code`         AS `national_code`,
+                designer.`tp_reject_exp`            AS `reject_exp`,
+                designer.`tp_card_number`           AS `card_number`,
+                designer.`tp_expertise`             AS `expertise`,
+                designer.`tp_bio`                   AS `bio`,
+                designer.`tp_sheba`                 AS `sheba`,
+                designer.`tp_address`               AS `address`,
+                designer.`tp_tel`                   AS `tel`
+            FROM
+                `tp_members` AS `member` LEFT JOIN
+                `tp_designers` AS `designer` ON(designer.tp_mid = member.tp_id)
+            WHERE
+                member.`tp_id` = 1
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer.tp_slug' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/profile;
+#[file]:          application/control/dashboard/profile.php;
+#[class]:         profile;
+#[method]:        index;
+#[date]:          2023-10-18 16:25:27;
+#[data]:          
+dashboard/profile=;
+#[sql]:
+ SELECT
+              member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,
+                member.`tp_type`                   AS `type`,
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request`,
+                designer.`tp_id`                    AS `id`,
+                designer.`tp_statistic_follower`    AS `statistic_follower`,
+                designer.`tp_statistic_product`     AS `statistic_product`,
+                designer.`tp_statistic_rate`        AS `statistic_rate`,
+                designer.`tp_title`                 AS `title`,
+                designer.`tp_slug`                  AS `slug`,
+                designer.`tp_meta`                  AS `meta`,
+                designer.`tp_bank`                  AS `bank`,
+                designer.`tp_national_code`         AS `national_code`,
+                designer.`tp_reject_exp`            AS `reject_exp`,
+                designer.`tp_card_number`           AS `card_number`,
+                designer.`tp_expertise`             AS `expertise`,
+                designer.`tp_bio`                   AS `bio`,
+                designer.`tp_sheba`                 AS `sheba`,
+                designer.`tp_address`               AS `address`,
+                designer.`tp_tel`                   AS `tel`
+            FROM
+                `tp_members` AS `member` LEFT JOIN
+                `tp_designers` AS `designer` ON(designer.tp_mid = member.tp_id)
+            WHERE
+                member.`tp_id` = 1
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IN('image','vector')   AND category.tp_filetype  LIKE     'Array'
+         ...' at line 26;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/search?filetype=image%2Cvector;
+#[file]:          application/control/search.php;
+#[class]:         search;
+#[method]:        index;
+#[date]:          2023-10-31 11:01:46;
+#[data]:          
+search=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`     AS `avatar`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                 `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id = product.tp_mid)INNER JOIN
+                `tp_designers`    AS designer  ON(designer.tp_mid = member.tp_id)
+            WHERE
+                product.`tp_delete` = 0   AND category.tp_filetype  LIKE IN('image','vector')   AND category.tp_filetype  LIKE     'Array'
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''32' )
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5' at line 26;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/search?filetype=image&resulation=32;
+#[file]:          application/control/search.php;
+#[class]:         search;
+#[method]:        index;
+#[date]:          2023-10-31 12:12:05;
+#[data]:          
+search=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`     AS `avatar`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                 `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id = product.tp_mid)INNER JOIN
+                `tp_designers`    AS designer  ON(designer.tp_mid = member.tp_id)
+            WHERE
+                product.`tp_delete` = 0  AND  ( category.tp_filetype  LIKE 'image' )  AND  ( product.tp_resulation   '32' )
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''32' )
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5' at line 26;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/search?filetype=image&resulation=32;
+#[file]:          application/control/search.php;
+#[class]:         search;
+#[method]:        index;
+#[date]:          2023-10-31 12:12:15;
+#[data]:          
+search=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`     AS `avatar`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                 `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id = product.tp_mid)INNER JOIN
+                `tp_designers`    AS designer  ON(designer.tp_mid = member.tp_id)
+            WHERE
+                product.`tp_delete` = 0  AND  ( category.tp_filetype  LIKE 'image' )  AND  ( product.tp_resulation   '32' )
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5' at line 26;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/search/banner-mashghel;
+#[file]:          application/control/search.php;
+#[class]:         search;
+#[method]:        bannermashghel;
+#[date]:          2023-10-31 16:37:39;
+#[data]:          
+search/banner-mashghel=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`     AS `avatar`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                 `tp_product` AS product INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id = product.tp_mid)INNER JOIN
+                `tp_designers`    AS designer  ON(designer.tp_mid = member.tp_id)
+            WHERE
+                product.`tp_delete` = 0  AND product.`tp_cat_path` LIKE '%_3_%' 0 
+                 ORDER BY product.tp_id DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'product.tp_statistic_view' in 'order clause';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/list?page=1&limit=5&total=3&sort=views&sort_type=DESC&q=&q_type=&filetype=&dimensions=&color_mode=&format=&layer=&resulation=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-10-31 16:54:22;
+#[data]:          
+api/cv1/product/list=;
+#[sql]:
+  SELECT
+                product.tp_id       AS `id`,
+                product.`tp_mid`    AS `mid`,
+                product.`tp_cid`    AS `cid`,
+                product.`tp_title`  AS `title`,
+                product.`tp_status` AS `status`,
+                member.`tp_pic`     AS `avatar`,
+                designer.`tp_statistic_product`    AS `statistic_product`,
+                member.`tp_slug`    AS `member_slug`,
+                product.`tp_slug`   AS `slug`,
+                product.`tp_price`  AS `price`,
+                product.`tp_serial` AS `serial`,
+                product.`tp_pic`    AS `img`,
+                CONCAT(
+                    member.tp_name,
+                    ' ',
+                    member.tp_family ) AS `full_name`,
+                category.`tp_title`    AS `category`,
+                product.`tp_date`      AS `createAt`
+            FROM
+                 `tp_product` AS product INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id = product.tp_mid)INNER JOIN
+                `tp_designers`    AS designer  ON(designer.tp_mid = member.tp_id)
+            WHERE
+                product.`tp_delete` = 0 
+                 ORDER BY product.tp_statistic_view DESC
+             LIMIT 0 , 5;
+#______________________________________________________________________
+ 
+ 

@@ -1,0 +1,26 @@
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.user_online' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/;
+#[file]:          ;
+#[class]:         ;
+#[method]:        ;
+#[date]:          2023-05-14 15:56:31;
+#[data]:          ;
+#[sql]:
+ 
+            SELECT
+                `tp_id`
+            FROM
+                `user_online`
+            WHERE
+                `tp_uid`    = '1'
+            AND `tp_code`   = '2a0f1ccd34efe8ddfe08763c7d6c36c1'
+            AND `tp_delete` = '0'
+            AND `tp_ip`     = '::1'
+        ;
+#______________________________________________________________________
+ 
+ 

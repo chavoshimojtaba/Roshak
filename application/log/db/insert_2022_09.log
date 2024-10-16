@@ -1,0 +1,394 @@
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_meta' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/tag;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-07 20:47:13;
+#[data]:          
+api/v1/tag=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_tags`
+            SET
+                tp_title = '', 
+                tp_alias = 'd', 
+                tp_meta  = '', 
+                tp_desc  = '', 
+                tp_uid   = 1,
+                tp_date  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_meta' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/tag;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-07 20:48:57;
+#[data]:          
+api/v1/tag=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_tags`
+            SET
+                tp_title = '', 
+                tp_alias = 'd', 
+                tp_meta  = 'd', 
+                tp_desc  = 'd', 
+                tp_uid   = 1,
+                tp_date  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp__tags' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/tag;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-08 13:39:21;
+#[data]:          
+api/v1/tag=;
+#[sql]:
+  INSERT INTO
+                `tp__tags`
+            SET
+                tp_title = 'd', 
+                tp_slug = 'd', 
+                tp_meta  = 'd', 
+                tp_desc  = '[sl]p[sr]d[sl]/p[sr]', 
+                tp_uid   = 1,
+                tp_date  = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_1_comments' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/comment/reply;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-08 19:40:11;
+#[data]:          
+api/v1/comment/reply=;
+#[sql]:
+ INSERT INTO
+                `tp_1_comments`
+            SET 
+				tp_mid			= 0,
+				tp_publish		= 1,
+				tp_pbid			= 2,
+				tp_pid			= 1,
+				tp_rate			= '0', 
+				tp_uid			= 1,
+				tp_text			= 'a',
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_1_comments' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/comment/reply;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-08 19:41:02;
+#[data]:          
+api/v1/comment/reply=;
+#[sql]:
+ INSERT INTO
+                `tp_1_comments`
+            SET 
+				tp_mid			= 0,
+				tp_publish		= 1,
+				tp_pbid			= 2,
+				tp_pid			= 1,
+				tp_rate			= '0', 
+				tp_uid			= 1,
+				tp_text			= 'a',
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+                tp_file       = 'upload/doc/public/public_8133415e166315893125' at line 4;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:21:19;
+#[data]:          
+api/v1/product=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_file       = 'upload/doc/public/public_8133415e16631589312510392883388.zip',
+                tp_pic        = 'upload/image/public/public_1cfead9916631591509784375892778.jpg',
+                tp_slug       = 'slug',
+                tp_desc       = '[sl]p[sr]inp_desc[sl]/p[sr]',
+                tp_meta       = 'meta',
+                tp_title      = 'title', 
+                tp_follow     = on, 
+                tp_index      = on, 
+                tp_tags       = '{"3":{"fa":"asad"}}', 
+                tp_mid        = 1,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+                tp_file       = 'upload/doc/public/public_8133415e166315893125' at line 4;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:21:33;
+#[data]:          
+api/v1/product=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_file       = 'upload/doc/public/public_8133415e16631589312510392883388.zip',
+                tp_pic        = 'upload/image/public/public_1cfead9916631591509784375892778.jpg',
+                tp_slug       = 'slug',
+                tp_desc       = '[sl]p[sr]inp_desc[sl]/p[sr]',
+                tp_meta       = 'meta',
+                tp_title      = 'title', 
+                tp_follow     = on, 
+                tp_index      = on,  
+                tp_mid        = 1,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+                tp_file       = 'upload/doc/public/public_8133415e166315893125' at line 4;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:23:12;
+#[data]:          
+api/v1/product=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_file       = 'upload/doc/public/public_8133415e16631589312510392883388.zip',
+                tp_pic        = 'upload/image/public/public_1cfead9916631591509784375892778.jpg',
+                tp_slug       = 'slug',
+                tp_desc       = '[sl]p[sr]inp_desc[sl]/p[sr]',
+                tp_meta       = 'meta',
+                tp_title      = 'title', 
+                tp_follow     = on, 
+                tp_index      = on,  
+                tp_mid        = 1,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+                tp_file       = 'upload/doc/public/public_8133415e166315893125' at line 4;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:23:23;
+#[data]:          
+api/v1/product=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_file       = 'upload/doc/public/public_8133415e16631589312510392883388.zip',
+                tp_pic        = 'upload/image/public/public_1cfead9916631591509784375892778.jpg',
+                tp_slug       = 'slug',
+                tp_desc       = '[sl]p[sr]inp_desc[sl]/p[sr]',
+                tp_meta       = 'meta',
+                tp_title      = 'title', 
+                tp_follow     = yes, 
+                tp_index      = yes,  
+                tp_mid        = 1,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+                tp_file       = 'upload/doc/public/public_8133415e166315893125' at line 4;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:23:51;
+#[data]:          
+api/v1/product=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET
+                tp_cid        = ,
+                tp_file       = 'upload/doc/public/public_8133415e16631589312510392883388.zip',
+                tp_pic        = 'upload/image/public/public_1cfead9916631591509784375892778.jpg',
+                tp_slug       = 'slug',
+                tp_desc       = '[sl]p[sr]inp_desc[sl]/p[sr]',
+                tp_meta       = 'meta',
+                tp_title      = 'title', 
+                tp_follow     = 'yes', 
+                tp_index      = 'yes',  
+                tp_mid        = 1,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_file' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:24:09;
+#[data]:          
+api/v1/product=;
+#[sql]:
+ INSERT INTO
+                `tp_product`
+            SET 
+                tp_file       = 'upload/doc/public/public_8133415e16631589312510392883388.zip',
+                tp_pic        = 'upload/image/public/public_1cfead9916631591509784375892778.jpg',
+                tp_slug       = 'slug',
+                tp_desc       = '[sl]p[sr]inp_desc[sl]/p[sr]',
+                tp_meta       = 'meta',
+                tp_title      = 'title', 
+                tp_follow     = 'yes', 
+                tp_index      = 'yes',  
+                tp_mid        = 1,
+                tp_date       = now()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:25:07;
+#[data]:          
+api/v1/product=;
+#[sql]:
+  INSERT INTO
+                `tp_product_tags_map`
+                (tp_tid,tp_pbid,tp_date)
+            VALUES
+                ;
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_pbid' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-14 20:26:29;
+#[data]:          
+api/v1/product=;
+#[sql]:
+  INSERT INTO
+                `tp_product_tags_map`
+                (tp_tid,tp_pbid,tp_date)
+            VALUES
+                (3,8,now());
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : insert;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_date' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product/add_attribute;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-19 12:57:55;
+#[data]:          
+api/v1/product/add_attribute=;
+#[sql]:
+ INSERT INTO
+                `tp_attributes`
+            SET
+                tp_grp   = 'color_mode',
+                tp_title = 'a', 
+                tp_date  = now()
+        ;
+#______________________________________________________________________
+ 
+ 

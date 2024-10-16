@@ -1,0 +1,215 @@
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Truncated incorrect DECIMAL value: 'ticket';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-12-04 12:23:43;
+#[data]:          
+dashboard/ticket=;
+#[sql]:
+ UPDATE
+                `tp_ticket_comments`
+            SET
+                `tp_read` = 'yes'
+            WHERE `tp_tid` = 'ticket'  AND tp_user_type =  'user'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Truncated incorrect DECIMAL value: 'ticket';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-12-04 12:24:12;
+#[data]:          
+dashboard/ticket=;
+#[sql]:
+ UPDATE
+                `tp_ticket_comments`
+            SET
+                `tp_read` = 'yes'
+            WHERE `tp_tid` = 'ticket'  AND tp_user_type =  'user'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'statistic_follower' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/member/follow;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-04 15:47:37;
+#[data]:          
+api/cv1/member/follow=;
+#[sql]:
+ 
+                UPDATE
+                    `tp_designers`
+                SET
+                    tp_statistic_follower  = statistic_follower + 1,
+                    tp_update  = now()
+                WHERE
+                tp_mid =  '17'
+            ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                tp_seo_title  = '11',
+                `tp_file`   = '',
+ ...' at line 5;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/update;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 16:05:38;
+#[data]:          
+api/cv1/product/update=;
+#[sql]:
+ 
+            UPDATE
+                `tp_product`
+            SET
+                `tp_color_mode`    = '33',`tp_format`    = '2-4',`tp_dimensions`    = '39',`tp_resulation`    = '27',`tp_layer`    = '46',
+                `tp_cid`    = ,
+                tp_seo_title  = '11',
+                `tp_file`   = '',
+                `tp_slug`   = 'slug',
+                `tp_title`  = 'طرح خام کارت ویزیت شهربازی',
+                tp_price_temp    = '5000',
+                tp_price    = '5000',
+                `tp_meta`   = 'طرح خام کارت ویزیت شهربازی',
+                `tp_desc`   = '',
+                `tp_update` = now()
+            WHERE
+                `tp_id` = '2'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+                tp_seo_title  = '11',
+                `tp_file`   = '',
+ ...' at line 5;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/cv1/product/update;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        cv1;
+#[date]:          2023-12-05 16:06:09;
+#[data]:          
+api/cv1/product/update=;
+#[sql]:
+ 
+            UPDATE
+                `tp_product`
+            SET
+                `tp_color_mode`    = '33',`tp_format`    = '2-4',`tp_dimensions`    = '39',`tp_resulation`    = '27',`tp_layer`    = '46',
+                `tp_cid`    = ,
+                tp_seo_title  = '11',
+                `tp_file`   = '',
+                `tp_slug`   = 'slug',
+                `tp_title`  = 'طرح خام کارت ویزیت شهربازی',
+                tp_price_temp    = '5000',
+                tp_price    = '5000',
+                `tp_meta`   = 'طرح خام کارت ویزیت شهربازی',
+                `tp_desc`   = '[sl]h1[sr]دانلود طرح بنر دکور هفته بسیج شامل خوشنویسی بسیج لشکر مخلص خدا کد فایل 9438075[sl]/h1[sr]
+[sl]h2 class=[wq]product_title[wq][sr]دانلود طرح بنر دکور هفته بسیج شامل خوشنویسی بسیج لشکر مخلص خدا[sl]/h2[sr]
+[sl]p[sr][and]nbsp[semi][sl]/p[sr]
+[sl]p style=[wq]text-align[colon] justify[semi][wq][sr]دانلود طرح بنر دکور هفته بسیج با فرمت psd و قابل ویرایش در نرم افزار فتوشاپ به صورت لایه باز توسط تیم طراحان طرح دات آی آر طراحی شده است[dot] در [sl]a title=[wq]طرح لایه باز هفته بسیج[wq] href=[wq]https[colon]//tarh[dot]ir/design-cat/[darsad]D8[darsad]B7[darsad]D8[darsad]B1[darsad]D8[darsad]AD-[darsad]D8[darsad]A8[darsad]D9[darsad]86[darsad]D8[darsad]B1-[darsad]D9[darsad]87[darsad]D9[darsad]81[darsad]D8[darsad]AA[darsad]D9[darsad]87-[darsad]D8[darsad]A8[darsad]D8[darsad]B3[darsad]DB[darsad]8C[darsad]D8[darsad]AC-[darsad]D9[darsad]88-[darsad]D8[darsad]A8[darsad]D8[darsad]B3[darsad]DB[darsad]8C[darsad]D8[darsad]AC-[darsad]D9[darsad]85[darsad]D8[darsad]B3[darsad]D8[darsad]AA[darsad]D8[darsad]B6[darsad]D8[darsad]B9[darsad]D9[darsad]81[darsad]DB[darsad]8C[darsad]D9[darsad]86[wq] target=[wq]_blank[wq] rel=[wq]noopener[wq][sr]طرح لایه باز هفته بسیج[sl]/a[sr] از تصاویر و المان های با کیفیت و متناسب با استاندارد چاپ استفاده گردیده است[dot] طرح بنر دکور لایه باز هفته بسیج شامل خوشنویسی بسیج لشکر مخلص خدا می باشد که المان های استفاده شده در طرح بنر دکور هفته بسیج قابلیت ویرایش، جابه جایی و تغییر سایز را دارا بوده و شما می توانید متناسب با سلیقه خودتان [sl]strong[sr]طرح بنر هفته بسیج[sl]/strong[sr] را ویرایش نمایید[dot][sl]/p[sr]
+[sl]h2 style=[wq]text-align[colon] justify[semi][wq][sr]ابعاد قابل چاپ طرح بنر تبریک هفته بسیج و کاربرد آن[sl]/h2[sr]
+[sl]p style=[wq]text-align[colon] justify[semi][wq][sr]طرح بنر پشت سن هفته بسیج اغلب در سایز 3 در 7 متر طراحی می شود ولی با توجه به لایه باز بودن و کیفیت بالای طرح لایه باز بنر خام هفته بسیج، قابلیت ویرایش و تبدیل به سایز دلخواه و همچنین چاپ در ابعاد و متریال های مختلف [pl]فلکس، پارچه و [dot][dot][dot][pr] را دارا می باشد[dot] [sl]a title=[wq]بنر[wq] href=[wq]https[colon]//tarh[dot]ir/design-cat/[darsad]D8[darsad]B7[darsad]D8[darsad]B1[darsad]D8[darsad]AD-[darsad]D8[darsad]A8[darsad]D9[darsad]86[darsad]D8[darsad]B1[wq] target=[wq]_blank[wq] rel=[wq]noopener[wq][sr]بنر[sl]/a[sr] 3 در 7 ، قابلیت چاپ بنر و لارج فرمت تا ابعاد 6 در 14 متر را بدون افت کیفیت دارد، همچنین برای ابعاد بزرگتر نیز در صورتی که فاصله بیننده تا بنر بیشتر از 8 متر باشد، بنر هفته بسیج قابل چاپ و نصب بوده و افت کیفیت به چشم نمی آید[dot] بنر پشت سن و طرح جایگاه آغاز هفته بسیج به عنوان یکی از انواع [sl]strong[sr]طرح دکور هفته بسیج لایه باز[sl]/strong[sr]، علاوه بر نصب در استندها و بیلبورد های شهری، بیشتر به منظور طراحی دکور سِن و جایگاه سخنرانی در همایش ها، سمینارها و مراسمات ملّی و همچنین در مراسمات مذهبی به منظور تزئین دکور و پشت منبری سخنران استفاده می شود[dot] مخمل های مذهبی و چاپ مخمل این طرحها به منظور تزیین دکور مخمل در مراسمات مذهبی و هیئت ها کاربرد زیادی دارد[dot][sl]/p[sr]
+[sl]p[sr][and]nbsp[semi][sl]/p[sr]',
+                `tp_update` = now()
+            WHERE
+                `tp_id` = '2'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Truncated incorrect DECIMAL value: 'index';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket/index/63;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-12-16 14:32:13;
+#[data]:          
+dashboard/ticket/index/63=;
+#[sql]:
+ UPDATE
+                `tp_ticket_comments`
+            SET
+                `tp_read` = 'yes'
+            WHERE `tp_tid` = 'index'  AND tp_user_type =  'user'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Truncated incorrect DECIMAL value: 'index';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket/index/63;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-12-16 14:32:38;
+#[data]:          
+dashboard/ticket/index/63=;
+#[sql]:
+ UPDATE
+                `tp_ticket_comments`
+            SET
+                `tp_read` = 'yes'
+            WHERE `tp_tid` = 'index'  AND tp_user_type =  'user'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Truncated incorrect DECIMAL value: 'index';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/dashboard/ticket/index/63;
+#[file]:          application/control/dashboard/ticket.php;
+#[class]:         ticket;
+#[method]:        index;
+#[date]:          2023-12-16 14:32:58;
+#[data]:          
+dashboard/ticket/index/63=;
+#[sql]:
+ UPDATE
+                `tp_ticket_comments`
+            SET
+                `tp_read` = 'yes'
+            WHERE `tp_tid` = 'index'  AND tp_user_type =  'user'
+        ;
+#______________________________________________________________________
+ 
+ 

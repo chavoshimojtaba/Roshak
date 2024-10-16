@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Dana';
+	font-weight: 400;
+	src: url('../../../../client/fonts/dana/eot/dana-medium.eot?#') format('eot'), url('../../../../client/fonts/dana/woff2/dana-medium.woff2') format('woff')
+}
+@font-face {
+	font-family: 'Dana';
+	font-weight: 600;
+	src: url('../../../../client/fonts/dana/eot/dana-bold.eot') format('eot'), url('../../../../client/fonts/dana/woff2/dana-bold.woff2') format('woff')
+}

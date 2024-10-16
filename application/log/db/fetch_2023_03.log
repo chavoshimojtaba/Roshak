@@ -1,0 +1,686 @@
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'designer' in 'on clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/product/index/designer/2;
+#[file]:          application/control/back_end/product.php;
+#[class]:         product;
+#[method]:        index;
+#[date]:          2023-03-01 00:14:26;
+#[data]:          
+admin/product/index/designer/2=;
+#[sql]:
+ SELECT
+                member.`tp_id`                     AS `id`,
+                designer.`tp_statistic_follower`   AS `statistic_follower`,  
+                designer.`tp_statistic_product`    AS `statistic_product`,  
+                designer.`tp_statistic_rate`       AS `statistic_rate`,  
+                designer.`tp_expertise`            AS `expertise`,   
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,  
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`
+            FROM
+                `tp_members` AS `member` INNER JOIN   
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id AND member.`tp_id` = designer)  
+                
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 13;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers/a;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        a;
+#[date]:          2023-03-01 11:42:07;
+#[data]:          
+designers/a=;
+#[sql]:
+ SELECT
+                designer.`tp_statistic_follower`   AS `statistic_follower`,  
+                designer.`tp_statistic_product`    AS `statistic_product`,  
+                designer.`tp_statistic_rate`       AS `statistic_rate`,  
+                designer.`tp_expertise`            AS `expertise`,   
+                member.`tp_id`                     AS `id`,
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`,  
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`
+            FROM
+                `tp_members` AS `member` INNER JOIN   
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id AND member.`tp_id` = )  
+                
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 10;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Revolutionary-political-sacred-defense;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Revolutionarypoliticalsacreddefense;
+#[date]:          2023-03-01 16:06:39;
+#[data]:          
+c/Revolutionary-political-sacred-defense=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid=()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 10;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Revolutionary-political-sacred-defense;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Revolutionarypoliticalsacreddefense;
+#[date]:          2023-03-01 17:05:04;
+#[data]:          
+c/Revolutionary-political-sacred-defense=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_id IN ()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 17:12:28;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_pid     AS pid,
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid IN ()
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 17:15:12;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_pid     AS pid,
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid =  
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 17:15:56;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_pid     AS pid,
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid =  
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 17:18:27;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_pid     AS pid,
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid =  
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 17:21:10;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_pid     AS pid,
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid =  
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 11;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 17:21:26;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT 
+                    category.tp_id      AS id,   
+                    category.tp_pid     AS pid,
+                    category.tp_icon    AS icon,
+                    category.tp_slug    AS slug,
+                    category.tp_title   AS title 
+			FROM
+                `tp_category`        AS category   
+
+			WHERE
+                category.`tp_delete` = '0' AND category.tp_pid =  
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.tp_cat_path' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        index;
+#[date]:          2023-03-01 18:41:13;
+#[data]:          
+c=;
+#[sql]:
+ SELECT
+                product.tp_id          AS `id`,
+                product.`tp_cid`       AS `cid`,
+                product.`tp_title`     AS `title`,
+                product.`tp_price`     AS `price`,
+                product.`tp_serial`    AS `serial`,
+                product.`tp_pic`       AS `img`,  
+                CONCAT( 
+                    member.tp_name,
+                     ' ',
+                    member.tp_family ) AS `full_name`,  
+                category.`tp_tree`    AS `tree`,
+                category.`tp_title`    AS `category`,
+                category.`tp_cat_path`    AS `cat_path`,
+                category.`tp_slug`    AS `category_slug`,
+                product.`tp_date`      AS `createAt` 
+            FROM
+                `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id =product.tp_mid)
+            WHERE
+                product.`tp_delete` = 0 
+            ORDER BY product.tp_id DESC
+         LIMIT 0 , 20;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.tp_cat_path' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        index;
+#[date]:          2023-03-01 19:02:29;
+#[data]:          
+c=;
+#[sql]:
+ SELECT
+                product.tp_id          AS `id`,
+                product.`tp_cid`       AS `cid`,
+                product.`tp_title`     AS `title`,
+                product.`tp_price`     AS `price`,
+                product.`tp_serial`    AS `serial`,
+                product.`tp_pic`       AS `img`,  
+                CONCAT( 
+                    member.tp_name,
+                     ' ',
+                    member.tp_family ) AS `full_name`,  
+                category.`tp_tree`    AS `tree`,
+                category.`tp_title`    AS `category`,
+                category.`tp_cat_path`    AS `cat_path`,
+                category.`tp_slug`    AS `category_slug`,
+                product.`tp_date`      AS `createAt` 
+            FROM
+                `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id =product.tp_mid)
+            WHERE
+                product.`tp_delete` = 0 
+            ORDER BY product.tp_id DESC
+         LIMIT 0 , 20;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.tp_cat_path' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        index;
+#[date]:          2023-03-01 19:06:04;
+#[data]:          
+c=;
+#[sql]:
+ SELECT
+                product.tp_id          AS `id`,
+                product.`tp_cid`       AS `cid`,
+                product.`tp_title`     AS `title`,
+                product.`tp_price`     AS `price`,
+                product.`tp_serial`    AS `serial`,
+                product.`tp_pic`       AS `img`,  
+                CONCAT( 
+                    member.tp_name,
+                     ' ',
+                    member.tp_family ) AS `full_name`,  
+                category.`tp_tree`    AS `tree`,
+                category.`tp_title`    AS `category`,
+                category.`tp_cat_path`    AS `cat_path`,
+                category.`tp_slug`    AS `category_slug`,
+                product.`tp_date`      AS `createAt` 
+            FROM
+                `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id =product.tp_mid)
+            WHERE
+                product.`tp_delete` = 0 
+            ORDER BY product.tp_id DESC
+         LIMIT 0 , 20;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'category.tp_cat_path' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/c/Occasional-designs;
+#[file]:          application/control/c.php;
+#[class]:         c;
+#[method]:        Occasionaldesigns;
+#[date]:          2023-03-01 19:17:25;
+#[data]:          
+c/Occasional-designs=;
+#[sql]:
+ SELECT
+                product.tp_id          AS `id`,
+                product.`tp_cid`       AS `cid`,
+                product.`tp_title`     AS `title`,
+                product.`tp_price`     AS `price`,
+                product.`tp_serial`    AS `serial`,
+                product.`tp_pic`       AS `img`,  
+                CONCAT( 
+                    member.tp_name,
+                     ' ',
+                    member.tp_family ) AS `full_name`,   
+                category.`tp_title`    AS `category`,  
+                product.`tp_date`      AS `createAt` 
+            FROM
+                `tp_product`    AS product  INNER JOIN 
+                `tp_category`   AS category ON(category.tp_id = product.tp_cid  ) INNER JOIN
+                `tp_members`    AS member  ON(member.tp_id =product.tp_mid)
+            WHERE
+                product.`tp_delete` = 0  AND category.tp_cat_path  LIKE '%_2_%'
+            ORDER BY product.tp_id DESC
+         LIMIT 0 , 20;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'users.tp_mail' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/ticket/view/27;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-05 13:48:27;
+#[data]:          
+api/v1/ticket/view/27=;
+#[sql]:
+ SELECT
+                tickets.tp_mid AS mid,
+                tickets.tp_id AS tid,
+                tickets.tp_title AS title,
+                tickets.tp_has_file AS has_file,
+                tickets.tp_priority AS priority,
+                tickets.tp_status AS `status`,
+                tickets.tp_referred AS `referred`,
+                tickets.tp_number AS `number`,
+                tickets.tp_rid AS rid,
+                comments.tp_read AS `read`,
+                comments.tp_id AS comment_id,
+                comments.tp_date AS last_update,
+                comments.tp_text AS `comment`,
+                comments.tp_umid AS comment_umid,
+                comments.tp_user_type AS user_type,
+                `role`.tp_name AS `role`,
+            CASE
+                comments.`tp_user_type` 
+                WHEN 'user' THEN
+                users.tp_pic ELSE members.tp_pic 
+                END AS `img`,
+            CASE
+                comments.`tp_user_type` 
+                WHEN 'user' THEN
+                CONCAT( users.tp_name, ' ', users.tp_family ) ELSE CONCAT( members.tp_name, ' ', members.tp_family ) 
+                END AS `full_name`,
+            CASE
+                comments.`tp_user_type` 
+                WHEN 'user' THEN
+                users.tp_mail ELSE members.tp_email 
+                END AS `email`,
+                comments.tp_date AS createAt  
+            FROM
+                tp_tickets tickets
+                INNER JOIN tp_ticket_comments comments ON ( comments.tp_tid = tickets.tp_id )
+                LEFT JOIN `tp_members` AS members ON ( members.tp_id = comments.tp_umid AND comments.`tp_user_type` ='member')
+                LEFT JOIN `tp_users` AS users ON ( users.tp_id = comments.tp_umid AND comments.`tp_user_type` ='user') 
+                INNER JOIN `tp_role` AS `role` ON ( `role`.tp_id = tickets.tp_rid)
+            WHERE
+                comments.tp_delete = 0 
+                AND tickets.tp_id = '27'  
+       ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_family' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/coopration_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-29 13:05:23;
+#[data]:          
+api/v1/member/coopration_requests=;
+#[sql]:
+ SELECT
+                member.tp_id         AS `id`, 
+                member.tp_mobile     AS `mobile`,  
+                DATE(member.tp_date) AS `createAt`, 
+                atachment.tp_attachment     AS `atachment`,   
+                member.tp_read     AS `status`,  
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name ) AS `full_name`
+            FROM
+                tp_coopration member INNER JOIN
+                tp_coopration_attachment atachment ON(atachment.tp_cid = member.tp_id)
+            WHERE
+                member.tp_delete = 0
+                
+            ORDER BY
+                member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_status' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-29 13:25:02;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                product.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,     
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) 
+            WHERE
+                settlement_requests.`tp_delete` = 0  
+            ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_status' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-29 13:25:21;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                product.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,     
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) 
+            WHERE
+                settlement_requests.`tp_delete` = 0  
+            ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'product.tp_pic' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-29 13:26:01;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                product.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,     
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) 
+            WHERE
+                settlement_requests.`tp_delete` = 0  
+            ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE 
+                `tp_id` = '2'' at line 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/comment/edit/2;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-29 16:04:28;
+#[data]:          
+api/v1/comment/edit/2=;
+#[sql]:
+ SELECT `tp_id`,`tp_text` FROM  WHERE 
+                `tp_id` = '2'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE 
+                `tp_id` = '2'' at line 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/comment/edit/2;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-03-29 16:05:14;
+#[data]:          
+api/v1/comment/edit/2=;
+#[sql]:
+ SELECT `tp_id`,`tp_text` FROM  WHERE 
+                `tp_id` = '2'
+        ;
+#______________________________________________________________________
+ 
+ 

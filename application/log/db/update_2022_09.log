@@ -1,0 +1,25 @@
+#[system:error] : update;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'tp_rid' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/product/2;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2022-09-16 13:53:42;
+#[data]:          
+api/v1/product/2=;
+#[sql]:
+ 
+            UPDATE
+                `sys_file`
+            SET
+                `tp_delete` = '1',
+                `tp_update` = now()
+            WHERE
+                `tp_rid`  = 2 AND `tp_delete` = '0' AND `tp_type` = 'product'
+        ;
+#______________________________________________________________________
+ 
+ 

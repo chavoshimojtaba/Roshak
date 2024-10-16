@@ -1,0 +1,204 @@
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND user.`tp_as_team_member` = 'yes'
+            ORDER BY
+                use...' at line 23;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/about_us;
+#[file]:          application/control/about_us.php;
+#[class]:         about_us;
+#[method]:        index;
+#[date]:          2023-08-01 16:56:54;
+#[data]:          
+about_us=;
+#[sql]:
+ SELECT 
+                `role`.`tp_name`          AS `role`,
+                user.`tp_name`            AS `name`,
+                user.`tp_family`          AS `family`, 
+                CONCAT (
+                    user.`tp_name`,' 
+                    user.',`tp_family`
+                    )                     AS `full_name`,
+                user.`tp_as_team_member`  AS `as_team_member`, 
+                user.`tp_expertise`       AS `expertise`, 
+                user.`tp_mobile`          AS `mobile`, 
+                user.`tp_address`         AS `address`, 
+                user.`tp_is_active`       AS `is_active`, 
+                user.`tp_id`              AS `id`,
+                user.`tp_rid`             AS `rid`,
+                user.`tp_pic`             AS `img`,  
+                user.`tp_email`           AS `email`, 
+                user.`tp_password`        AS `password`,
+                user.`tp_status`          AS `status` 
+            FROM
+                `tp_users` as user INNER JOIN
+                `tp_role` AS `role` ON(role.tp_id = user.tp_rid) 
+            WHERE 
+                user.`tp_delete` = 0 AND user.`tp_is_admin` = 0 AND user.tp_id <>   AND user.`tp_as_team_member` = 'yes'
+            ORDER BY
+                user.tp_id DESC 
+         LIMIT 0 , 100;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND user.`tp_as_team_member` = 'yes'
+            ORDER BY
+                use...' at line 23;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/about_us;
+#[file]:          application/control/about_us.php;
+#[class]:         about_us;
+#[method]:        index;
+#[date]:          2023-08-01 17:00:27;
+#[data]:          
+about_us=;
+#[sql]:
+ SELECT 
+                `role`.`tp_name`          AS `role`,
+                user.`tp_name`            AS `name`,
+                user.`tp_family`          AS `family`, 
+                CONCAT (
+                    user.`tp_name`,' 
+                    user.',`tp_family`
+                    )                     AS `full_name`,
+                user.`tp_as_team_member`  AS `as_team_member`, 
+                user.`tp_expertise`       AS `expertise`, 
+                user.`tp_mobile`          AS `mobile`, 
+                user.`tp_address`         AS `address`, 
+                user.`tp_is_active`       AS `is_active`, 
+                user.`tp_id`              AS `id`,
+                user.`tp_rid`             AS `rid`,
+                user.`tp_pic`             AS `img`,  
+                user.`tp_email`           AS `email`, 
+                user.`tp_password`        AS `password`,
+                user.`tp_status`          AS `status` 
+            FROM
+                `tp_users` as user INNER JOIN
+                `tp_role` AS `role` ON(role.tp_id = user.tp_rid) 
+            WHERE 
+                user.`tp_delete` = 0 AND user.`tp_is_admin` = 0 AND user.tp_id <>   AND user.`tp_as_team_member` = 'yes'
+            ORDER BY
+                user.tp_id DESC 
+         LIMIT 0 , 100;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_statistic_follower' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        index;
+#[date]:          2023-08-02 12:11:29;
+#[data]:          
+designers=;
+#[sql]:
+ SELECT
+                member.tp_id                 AS `id`, 
+                member.tp_mobile             AS `mobile`,  
+                member.tp_slug               AS `slug`,   
+                member.tp_statistic_follower AS `statistic_follower`,   
+                member.tp_statistic_product  AS `statistic_product`,   
+                member.tp_statistic_rate     AS `statistic_rate`,   
+                member.tp_email              AS `email`,   
+                DATE(member.tp_date)         AS `createAt`,
+                member.tp_type               AS `type`,   
+                member.tp_status             AS `status`,   
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name )         AS `full_name`,
+                member.tp_pic                AS `img` 
+            FROM
+                tp_members member   
+            WHERE
+                member.tp_delete = 0   AND member.tp_change_type_request='confirm'  AND member.tp_type='designer'  
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_statistic_followers' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        index;
+#[date]:          2023-08-02 12:11:37;
+#[data]:          
+designers=;
+#[sql]:
+ SELECT
+                member.tp_id                 AS `id`, 
+                member.tp_mobile             AS `mobile`,  
+                member.tp_slug               AS `slug`,   
+                member.tp_statistic_followers AS `statistic_follower`,   
+                member.tp_statistic_product  AS `statistic_product`,   
+                member.tp_statistic_rate     AS `statistic_rate`,   
+                member.tp_email              AS `email`,   
+                DATE(member.tp_date)         AS `createAt`,
+                member.tp_type               AS `type`,   
+                member.tp_status             AS `status`,   
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name )         AS `full_name`,
+                member.tp_pic                AS `img` 
+            FROM
+                tp_members member   
+            WHERE
+                member.tp_delete = 0   AND member.tp_change_type_request='confirm'  AND member.tp_type='designer'  
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_statistic_follower' in 'field list';</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/designers;
+#[file]:          application/control/designers.php;
+#[class]:         designers;
+#[method]:        index;
+#[date]:          2023-08-02 12:12:06;
+#[data]:          
+designers=;
+#[sql]:
+ SELECT
+                member.tp_id                 AS `id`, 
+                member.tp_mobile             AS `mobile`,  
+                member.tp_slug               AS `slug`,   
+                member.tp_statistic_follower AS `statistic_follower`,   
+                member.tp_statistic_product  AS `statistic_product`,   
+                member.tp_statistic_rate     AS `statistic_rate`,   
+                member.tp_email              AS `email`,   
+                DATE(member.tp_date)         AS `createAt`,
+                member.tp_type               AS `type`,   
+                member.tp_status             AS `status`,   
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name )         AS `full_name`,
+                member.tp_pic                AS `img` 
+            FROM
+                tp_members member   
+            WHERE
+                member.tp_delete = 0   AND member.tp_change_type_request='confirm'  AND member.tp_type='designer'  
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 

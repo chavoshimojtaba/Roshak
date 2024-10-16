@@ -1,0 +1,17 @@
+ul > .page-item:last-child .page-link,ul > .page-item:first-child .page-link{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding: 4px;
+}
+#search-block .header-search-form .select2{
+    background-color: #f6f6f6 !important;
+    margin: 0 !important;
+}
+#search-block .header-search-form .btn,
+#search-block .header-search-form input{
+    height: 40px !important;
+}
+.form-control{
+    line-height: 2.2 !important;
+}

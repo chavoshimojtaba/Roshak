@@ -1,0 +1,155 @@
+#[system:error] : update;
+#[error:num]:     1265;
+#[error]:         <font color="#FF0000">Data truncated for column 'tp_status' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/checkout;
+#[file]:          application/control/checkout.php;
+#[class]:         checkout;
+#[method]:        index;
+#[date]:          2023-11-11 13:59:54;
+#[data]:          
+checkout=;
+#[sql]:
+ 
+            UPDATE
+                `tp_transaction`
+            SET
+                `tp_bank_message` = '',
+                `tp_bank_code` = '',
+                `tp_data` = '',
+                `tp_status` = '',
+                `tp_update` = now()
+            WHERE
+                `tp_id` = '2'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Incorrect date value: '' for column `tarhpich`.`tp_members`.`tp_birthdate` at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/update_profile/26;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-18 14:20:59;
+#[data]:          
+api/v1/member/update_profile/26=;
+#[sql]:
+ 
+            UPDATE
+                `tp_members`
+            SET
+                tp_name  = 'ماریا',tp_family  = 'نصیری',tp_mobile  = '09154236587',tp_email  = 'nasiri[at]gmail[dot]com',tp_birthdate  = '',tp_status  = 'deactive',
+                tp_update           = now()
+            WHERE
+                tp_id  = 26
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Incorrect date value: '' for column `tarhpich`.`tp_members`.`tp_birthdate` at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/update_profile/26;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-18 14:21:03;
+#[data]:          
+api/v1/member/update_profile/26=;
+#[sql]:
+ 
+            UPDATE
+                `tp_members`
+            SET
+                tp_name  = 'ماریا',tp_family  = 'نصیری',tp_mobile  = '09154236587',tp_email  = 'nasiri[at]gmail[dot]com',tp_birthdate  = '',tp_status  = 'deactive',
+                tp_update           = now()
+            WHERE
+                tp_id  = 26
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1292;
+#[error]:         <font color="#FF0000">Incorrect date value: '' for column `tarhpich`.`tp_members`.`tp_birthdate` at row 1;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/update_profile/26;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-11-18 14:24:39;
+#[data]:          
+api/v1/member/update_profile/26=;
+#[sql]:
+ 
+            UPDATE
+                `tp_members`
+            SET
+                tp_name  = 'ماریا',tp_family  = 'نصیری',tp_mobile  = '09154236587',tp_email  = 'nasiri[at]gmail[dot]com',tp_birthdate  = '',tp_status  = 'deactive',
+                tp_update           = now()
+            WHERE
+                tp_id  = 26
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`tp_start_date` = now(),
+                tp_status          = 'active',
+     ...' at line 4;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/plan/bank/1;
+#[file]:          application/control/plan.php;
+#[class]:         plan;
+#[method]:        bank;
+#[date]:          2023-11-21 15:18:40;
+#[data]:          
+plan/bank/1=;
+#[sql]:
+ UPDATE
+                `tp_member_plan`
+            SET
+                tp_end_date = now() + interval  day ,`tp_start_date` = now(),
+                tp_status          = 'active',
+                `tp_update`       = now()
+            WHERE
+                `tp_id` = '21'
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : update;
+#[error:num]:     1265;
+#[error]:         <font color="#FF0000">Data truncated for column 'tp_status' at row 1;</font>
+#[uid]:           0;
+#[ip]:            ::1;
+#[page]:          /tarhpich/plan/bank/1;
+#[file]:          application/control/plan.php;
+#[class]:         plan;
+#[method]:        bank;
+#[date]:          2023-11-21 15:39:11;
+#[data]:          
+plan/bank/1=;
+#[sql]:
+ UPDATE
+                `tp_member_plan`
+            SET
+                
+                tp_status          = '',
+                `tp_update`       = now()
+            WHERE
+                `tp_id` = '33'
+        ;
+#______________________________________________________________________
+ 
+ 

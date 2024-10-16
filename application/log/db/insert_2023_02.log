@@ -1,0 +1,25 @@
+#[system:error] : insert;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_faq' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/pages/add_faq;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-02-26 21:41:46;
+#[data]:          
+api/v1/pages/add_faq=;
+#[sql]:
+ 
+            INSERT INTO
+                `tp_faq`
+            SET
+                `tp_title`  = 'a',   
+                `tp_desc`   = '[sl]p[sr]a[sl]/p[sr]',    
+                `tp_type`   = 'policy',    
+                tp_date        = now()
+        ;
+#______________________________________________________________________
+ 
+ 

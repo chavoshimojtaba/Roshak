@@ -1,0 +1,842 @@
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_message_template' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/notification;
+#[file]:          application/control/back_end/notification.php;
+#[class]:         notification;
+#[method]:        index;
+#[date]:          2023-04-04 11:31:44;
+#[data]:          
+admin/notification=;
+#[sql]:
+ SELECT
+                template.tp_id     AS id,
+                template.tp_title AS `title`,  
+                template.tp_exp  AS `exp`,  
+                template.tp_alias    AS `alias`,   
+                template.tp_date   AS createAt 
+            FROM
+                tp_message_template AS  template  
+            WHERE
+                template.tp_delete = 0 AND template.tp_type = ''
+            ORDER BY
+                template.tp_id DESC
+         LIMIT 0 , 200;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1146;
+#[error]:         <font color="#FF0000">Table 'tarhpich.tp_message_template' doesn't exist;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/notification;
+#[file]:          application/control/back_end/notification.php;
+#[class]:         notification;
+#[method]:        index;
+#[date]:          2023-04-04 11:32:10;
+#[data]:          
+admin/notification=;
+#[sql]:
+ SELECT
+                template.tp_id     AS id,
+                template.tp_title AS `title`,  
+                template.tp_exp  AS `exp`,  
+                template.tp_alias    AS `alias`,   
+                template.tp_date   AS createAt 
+            FROM
+                tp_message_template AS  template  
+            WHERE
+                template.tp_delete = 0 AND template.tp_type = ''
+            ORDER BY
+                template.tp_id DESC
+         LIMIT 0 , 200;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'plan.tp_mid' in 'on clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/member/view/8;
+#[file]:          application/control/back_end/member.php;
+#[class]:         member;
+#[method]:        view;
+#[date]:          2023-04-04 19:04:36;
+#[data]:          
+admin/member/view/8=;
+#[sql]:
+ SELECT
+                member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`, 
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`, 
+                member.`tp_type`                   AS `type`,  
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                plan.`tp_title`                    AS `title`,
+                plan.`tp_period`                    AS `period`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request` 
+            FROM
+                `tp_members`                AS `member` LEFT JOIN   
+                `tp_member_plan` AS `member_plan`  ON(member_plan.tp_mid = member.tp_id )   INNER JOIN   
+                `tp_plan` AS `plan`  ON(plan.tp_mid = member_plan.tp_pid and  member_plan.tp_status ='pend' )  
+            WHERE 
+                member.`tp_id` = 8
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member_plan.tp_pid' in 'on clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/member/view/8;
+#[file]:          application/control/back_end/member.php;
+#[class]:         member;
+#[method]:        view;
+#[date]:          2023-04-04 19:04:47;
+#[data]:          
+admin/member/view/8=;
+#[sql]:
+ SELECT
+                member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`, 
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`, 
+                member.`tp_type`                   AS `type`,  
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                plan.`tp_title`                    AS `title`,
+                plan.`tp_period`                    AS `period`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request` 
+            FROM
+                `tp_members`                AS `member` LEFT JOIN   
+                `tp_member_plan` AS `member_plan`  ON(member_plan.tp_mid = member.tp_id )   INNER JOIN   
+                `tp_plan` AS `plan`  ON(plan.tp_id = member_plan.tp_pid and  member_plan.tp_status ='pend' )  
+            WHERE 
+                member.`tp_id` = 8
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'user_login.tp_type' in 'on clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/admin/member/view/8;
+#[file]:          application/control/back_end/member.php;
+#[class]:         member;
+#[method]:        view;
+#[date]:          2023-04-04 19:21:59;
+#[data]:          
+admin/member/view/8=;
+#[sql]:
+ SELECT
+                member.`tp_id`                     AS `id`,
+                member.`tp_status`                 AS `status`, 
+                member.`tp_name`                   AS `name`,
+                member.`tp_family`                 AS `family`, 
+                member.`tp_type`                   AS `type`,  
+                member.`tp_mobile`                 AS `mobile`,
+                member.`tp_birthdate`              AS `birthdate`,
+                member.`tp_email`                  AS `email`,
+                member.`tp_date`                   AS `createAt`,
+                member.`tp_pic`                    AS `pic`,
+                member_plan.`tp_start_date`        AS `start_date`,
+                member_plan.`tp_end_date`          AS `end_date`,
+                DATEDIFF(
+                    member_plan.`tp_end_date`
+                    , member_plan.`tp_start_date`
+                )                                  AS remaining_days, 
+                plan.`tp_title`                    AS `plan`, 
+                plan.`tp_period`                   AS `period`,
+                member.`tp_complete`               AS `complete`,
+                member.`tp_change_type_request`    AS `change_type_request` 
+            FROM
+                `tp_members`                AS `member` LEFT JOIN   
+                `tp_member_plan` AS `member_plan`  ON(member_plan.tp_mid = member.tp_id and  member_plan.tp_status ='pend' )   LEFT JOIN   
+                `tp_plan` AS `plan`  ON(plan.tp_id = member_plan.tp_plan_id )  LEFT JOIN
+                `user_login` AS `user_login`  ON(user_login.tp_uid = member.tp_id and  user_login.tp_type ='member' ) 
+            WHERE 
+                member.`tp_id` = 8
+        ;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+           ' at line 18;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 13:42:36;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,     
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) 
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0  
+            ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'order clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=full_name&sort_type=asc&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 16:23:59;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0  
+             ORDER BY settlement_requests.tp_family asc
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'date.tp_id' in 'order clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:15:24;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0  
+             ORDER BY date.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=0&sort_type=DESC&q=dqdd&q_type=full_name&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:21:57;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0   AND  settlement_requests.tp_family LIKE '%dqdd%' OR settlement_requests.tp_name  LIKE '%dqdd%' AND  member.tp_family LIKE '%dqdd%' OR member.tp_name  LIKE '%dqdd%'
+             ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=0&sort_type=DESC&q=qwd&q_type=full_name&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:22:26;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0   AND  settlement_requests.tp_family LIKE '%qwd%' OR settlement_requests.tp_name  LIKE '%qwd%' AND  member.tp_family LIKE '%qwd%' OR member.tp_name  LIKE '%qwd%'
+             ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=0&sort_type=DESC&q=qwd&q_type=full_name&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:22:33;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0   AND  settlement_requests.tp_family LIKE '%qwd%' OR settlement_requests.tp_name  LIKE '%qwd%' AND  member.tp_family LIKE '%qwd%' OR member.tp_name  LIKE '%qwd%'
+             ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=0&sort_type=DESC&q=qwd&q_type=full_name&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:22:35;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0   AND  settlement_requests.tp_family LIKE '%qwd%' OR settlement_requests.tp_name  LIKE '%qwd%' AND  member.tp_family LIKE '%qwd%' OR member.tp_name  LIKE '%qwd%'
+             ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=0&sort_type=DESC&q=qwdd&q_type=full_name&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:23:05;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0   AND  settlement_requests.tp_family LIKE '%qwdd%' OR settlement_requests.tp_name  LIKE '%qwdd%' AND  member.tp_family LIKE '%qwdd%' OR member.tp_name  LIKE '%qwdd%'
+             ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'settlement_requests.tp_family' in 'where clause';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/settlement_requests?page=1&limit=10&total=1&sort_by=0&sort_type=DESC&q=qwdd&q_type=full_name&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 17:23:28;
+#[data]:          
+api/v1/member/settlement_requests=;
+#[sql]:
+ SELECT
+                settlement_requests.tp_mid      AS `mid`,
+                settlement_requests.tp_id       AS `id`,   
+                settlement_requests.tp_status   AS `status`,     
+                settlement_requests.tp_desc     AS `desc`,     
+                settlement_requests.tp_reply    AS `reply`,    
+                member.tp_mobile                AS `mobile`,    
+                member.`tp_pic`                AS `img`,
+                CONCAT( 
+                    member.tp_name,
+                        ' ',
+                    member.tp_family 
+                )                               AS `full_name`,  
+                designer.`tp_bank`                  AS `bank`,  
+                designer.`tp_sheba`                 AS `sheba`,
+                settlement_requests.`tp_date`   AS `createAt` 
+            FROM
+                `tp_member_settlement_requests` AS settlement_requests INNER JOIN  
+                `tp_members`                    AS member  ON(settlement_requests.tp_mid = member.tp_id  ) INNER JOIN  
+                `tp_designers` AS `designer`  ON(designer.tp_mid = member.tp_id )  
+            WHERE
+                settlement_requests.`tp_delete` = 0   AND  settlement_requests.tp_family LIKE '%qwdd%' OR settlement_requests.tp_name  LIKE '%qwdd%' AND  member.tp_family LIKE '%qwdd%' OR member.tp_name  LIKE '%qwdd%'
+             ORDER BY settlement_requests.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY member.tp_type asc
+         LIMIT 0 , 10' at line 19;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/list?page=1&limit=10&total=4&sort_by=type&sort_type=asc&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 18:03:00;
+#[data]:          
+api/v1/member/list=;
+#[sql]:
+ SELECT
+                member.tp_id         AS `id`, 
+                member.tp_mobile     AS `mobile`,  
+                member.tp_slug      AS `slug`,   
+                member.tp_email      AS `email`,   
+                DATE(member.tp_date) AS `createAt`,
+                member.tp_type       AS `type`,   
+                member.tp_status     AS `status`,   
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name ) AS `full_name`,
+                member.tp_pic        AS `img` 
+            FROM
+                tp_members member   
+            WHERE
+                member.tp_delete = 0  
+            ORDER BY
+                 ORDER BY member.tp_type asc
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY member.tp_type desc
+         LIMIT 0 , 10' at line 19;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/list?page=1&limit=10&total=4&sort_by=type&sort_type=desc&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 18:03:03;
+#[data]:          
+api/v1/member/list=;
+#[sql]:
+ SELECT
+                member.tp_id         AS `id`, 
+                member.tp_mobile     AS `mobile`,  
+                member.tp_slug      AS `slug`,   
+                member.tp_email      AS `email`,   
+                DATE(member.tp_date) AS `createAt`,
+                member.tp_type       AS `type`,   
+                member.tp_status     AS `status`,   
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name ) AS `full_name`,
+                member.tp_pic        AS `img` 
+            FROM
+                tp_members member   
+            WHERE
+                member.tp_delete = 0  
+            ORDER BY
+                 ORDER BY member.tp_type desc
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY member.tp_id DESC
+         LIMIT 0 , 10' at line 18;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/coopration_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 18:08:12;
+#[data]:          
+api/v1/member/coopration_requests=;
+#[sql]:
+ SELECT
+                member.tp_id         AS `id`, 
+                member.tp_mobile     AS `mobile`,  
+                DATE(member.tp_date) AS `createAt`, 
+                atachment.tp_attachment     AS `atachment`,   
+                member.tp_read     AS `status`,  
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name ) AS `full_name`
+            FROM
+                tp_coopration member INNER JOIN
+                tp_coopration_attachment atachment ON(atachment.tp_cid = member.tp_id)
+            WHERE
+                member.tp_delete = 0
+                
+            ORDER BY
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_family' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/coopration_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 18:09:40;
+#[data]:          
+api/v1/member/coopration_requests=;
+#[sql]:
+ SELECT
+                member.tp_id         AS `id`, 
+                member.tp_mobile     AS `mobile`,  
+                DATE(member.tp_date) AS `createAt`, 
+                atachment.tp_attachment     AS `atachment`,   
+                member.tp_read     AS `status`,  
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name ) AS `full_name`
+            FROM
+                tp_coopration member INNER JOIN
+                tp_coopration_attachment atachment ON(atachment.tp_cid = member.tp_id)
+            WHERE
+                member.tp_delete = 0
+                 
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1054;
+#[error]:         <font color="#FF0000">Unknown column 'member.tp_family' in 'field list';</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/member/coopration_requests?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-05 18:10:05;
+#[data]:          
+api/v1/member/coopration_requests=;
+#[sql]:
+ SELECT
+                member.tp_id         AS `id`, 
+                member.tp_mobile     AS `mobile`,  
+                DATE(member.tp_date) AS `createAt`, 
+                atachment.tp_attachment     AS `atachment`,   
+                member.tp_read     AS `status`,  
+                CONCAT( 
+                    member.tp_family,
+                    ' ',
+                    member.tp_name ) AS `full_name`
+            FROM
+                tp_coopration member INNER JOIN
+                tp_coopration_attachment atachment ON(atachment.tp_cid = member.tp_id)
+            WHERE
+                member.tp_delete = 0
+                 
+                 ORDER BY member.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY tags.tp_id DESC
+         LIMIT 0 , 10' at line 15;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/tag/list?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=&type=product;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-06 10:52:49;
+#[data]:          
+api/v1/tag/list=;
+#[sql]:
+ SELECT
+                tags.tp_id AS id, 
+                tags.`tp_short_desc` AS short_desc,  
+                tags.`tp_title_1` AS title_1,  
+                tags.`tp_title` AS title,  
+				'محصولات'         AS `products`,  
+                tags.`tp_slug` AS `slug`,  
+                tags.`tp_desc` AS `desc`,  
+                tags.`tp_meta` AS meta,  
+                tags.tp_date AS createAt 
+            FROM
+                `tp_product_tags` AS tags 
+            WHERE
+                tags.`tp_delete` = 0 
+            ORDER BY  ORDER BY tags.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ordr.tp_id DESC
+         LIMIT 0 , 10' at line 32;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/order/list?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-06 11:22:25;
+#[data]:          
+api/v1/order/list=;
+#[sql]:
+ SELECT
+                `ordr`.`tp_id`             AS `id`,
+                `ordr`.`tp_mid`            AS `mid`,
+				`ordr`.`tp_type`           AS `type`,
+				`ordr`.`tp_serial`         AS `serial`,
+				`ordr`.`tp_transaction_id` AS `transaction_id`,
+				`ordr`.`tp_total_price`    AS `total_price`,
+				`ordr`.`tp_desc`           AS `desc`,
+				`ordr`.`tp_discount`       AS `discount`,
+				`ordr`.`tp_discount_code`  AS `discount_code`,
+				`ordr`.`tp_status`         AS `status`,  
+                products.`tp_id`            AS `pid`,
+                products.`tp_title`         AS `product_title`,
+                order_products.`tp_amount`  AS `product_price`,
+				`member`.`tp_pic`           AS `pic`,
+                CONCAT(member.tp_name,' ',
+				member.tp_family )  		AS `full_name`,
+                CONCAT( 
+                    designer.tp_name,
+                        ' ',
+                    designer.tp_family 
+                )                   AS `designer`,  
+                `ordr`.`tp_date`            AS `createAt` 
+            FROM
+                `tp_order`    AS `ordr`    INNER JOIN 
+                `tp_order_products`  AS order_products      ON(order_products.tp_oid = ordr.tp_id ) INNER JOIN
+                `tp_product`  AS products      ON(products.tp_id = order_products.tp_pid ) INNER JOIN 
+                `tp_members`  AS designer  ON(designer.tp_id =products.tp_mid)  INNER JOIN
+                `tp_members`  AS member  ON(`member`.tp_id = `ordr`.tp_mid)
+            WHERE
+                `ordr`.`tp_delete` = 0 
+            ORDER BY  ORDER BY ordr.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
+#[system:error] : fetch;
+#[error:num]:     1064;
+#[error]:         <font color="#FF0000">You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY tickets.tp_id DESC
+         LIMIT 0 , 10' at line 25;</font>
+#[uid]:           1;
+#[ip]:            ::1;
+#[page]:          /tarhpich/api/v1/ticket/list?page=1&limit=10&total=0&sort_by=0&sort_type=DESC&q=&q_type=&date_to=&date_from=;
+#[file]:          application/control/api.php;
+#[class]:         api;
+#[method]:        v1;
+#[date]:          2023-04-06 11:27:58;
+#[data]:          
+api/v1/ticket/list=;
+#[sql]:
+ SELECT
+                tickets.tp_mid AS mid,  
+                tickets.tp_id AS tid,
+                tickets.tp_title AS title,
+                tickets.tp_priority AS priority,
+                tickets.tp_status AS `status`,
+                tickets.tp_referred AS `referred`,
+                tickets.tp_number AS `number`,
+                tickets.tp_rid AS rid,
+                comments.tp_read AS `read`,
+                comments.tp_id AS comment_id,
+                comments.tp_date AS createAt,
+                comments.tp_text AS `comment`,
+                comments.tp_umid AS comment_umid,
+                comments.tp_user_type AS user_type ,
+                CONCAT( member.tp_name, ' ', member.tp_family )  AS `full_name`,
+                member.tp_pic  AS `img`
+            FROM
+                tp_tickets tickets INNER JOIN
+                tp_ticket_comments comments ON ( comments.tp_tid = tickets.tp_id ) INNER JOIN
+                tp_members member ON(member.tp_id = tickets.tp_mid)
+            WHERE
+                comments.tp_delete = 0
+                AND comments.tp_id = (SELECT tp_id FROM tp_ticket_comments WHERE tp_delete = 0 and tp_tid = tickets.tp_id ORDER BY tp_id DESC limit 1) 
+            ORDER BY  ORDER BY tickets.tp_id DESC
+         LIMIT 0 , 10;
+#______________________________________________________________________
+ 
+ 
